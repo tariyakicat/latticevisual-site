@@ -23,76 +23,76 @@ import "./styles.css";
 const services = [
   {
     eyebrow: "MOA / MOD Animation",
-    title: "Mechanism stories built for clarity",
+    title: "Mechanisms translated into memorable stories",
     image: "/assets/motion-graphics.png",
     icon: BrainCircuit,
     intro:
-      "Cinematic 3D sequences that explain drug action, cellular response, microscopic transport and complex biological pathways for investor, HCP and education contexts.",
-    items: ["Mechanism of action animation", "Cellular and molecular sequences", "Conference and launch-screen edits"],
+      "High-end 3D animation for mechanism of action, mechanism of disease, therapeutic platforms and microscopic biological processes. Built for audiences who need to understand the science quickly without losing the nuance.",
+    items: ["MOA and MOD animation", "Disease pathway and cellular biology sequences", "Congress, investor and HCP-ready edits"],
   },
   {
     eyebrow: "Scientific Illustration",
-    title: "Publication visuals with cinematic depth",
+    title: "Single images that carry complex science",
     image: "/assets/scientific-illustration.png",
     icon: Microscope,
     intro:
-      "Graphical abstracts, cover art and research diagrams designed to preserve scientific logic while giving the work a stronger visual signature.",
-    items: ["Graphical abstracts and TOC art", "2D and 3D mechanism diagrams", "Premium journal cover visuals"],
+      "Publication figures, graphical abstracts and campaign visuals that bring structure to dense concepts. Each image is composed to explain, persuade and remain scientifically credible.",
+    items: ["Graphical abstracts and TOC visuals", "2D / 3D mechanism diagrams", "Journal cover and hero science imagery"],
   },
   {
     eyebrow: "Device & Product CGI",
-    title: "Technical products made visually legible",
+    title: "Technical products shown with precision",
     image: "/assets/product-visualization.png",
     icon: Boxes,
     intro:
-      "High-fidelity renders, exploded views and macro detail shots that help hardware, device and manufacturing teams communicate form, function and internal innovation.",
-    items: ["Hero product renders", "Exploded-view system visuals", "Macro material and sensor detail"],
+      "Clean, high-fidelity product visuals for medical devices, diagnostics, hardware and advanced manufacturing. Designed to reveal how a product works, what makes it different and where the engineering value sits.",
+    items: ["Launch and website product renders", "Exploded views and internal system visuals", "Macro material, sensor and component detail"],
   },
   {
-    eyebrow: "Motion Design Systems",
-    title: "Launch assets for every channel",
+    eyebrow: "Campaign Visual Systems",
+    title: "A coherent visual language for launch",
     image: "/assets/hero-lattice.png",
     icon: CirclePlay,
     intro:
-      "Adapted stills, loops and short-form motion packages for websites, pitch decks, PR campaigns, social channels, exhibition screens and sales enablement.",
-    items: ["2D motion graphics", "Short-form CGI loops", "Pitch and website visual toolkits"],
+      "Still frames, loops, short edits and motion graphics adapted from a core visual idea so teams can communicate consistently across web, pitch, conference and sales environments.",
+    items: ["Website and social motion loops", "Pitch deck and PR visual kits", "Conference screen and booth content"],
   },
 ];
 
 const useCases = [
   {
-    title: "For discovery-stage science",
-    text: "Turn early research, protocols and proposed mechanisms into visuals that help collaborators and reviewers understand the idea quickly.",
+    title: "For science that needs to be understood",
+    text: "Clarify a mechanism, pathway, platform or product story for people who do not have time to decode dense technical material.",
   },
   {
-    title: "For biotech and medtech launches",
-    text: "Create a consistent image system for websites, investor decks, PR announcements, congress screens and explainers.",
+    title: "For launch moments that need visual authority",
+    text: "Build the core imagery for websites, investor decks, announcements, congress booths, sales materials and internal alignment.",
   },
   {
-    title: "For publications and education",
-    text: "Shape figures, abstracts and animations that keep scientific hierarchy intact while raising visual impact.",
+    title: "For publications, education and review",
+    text: "Create figures, abstracts and explanatory assets that preserve hierarchy, scientific accuracy and audience confidence.",
   },
 ];
 
 const featuredWorks = [
   {
-    title: "Molecular Pathway Atmosphere",
-    type: "MOA Visual Direction",
+    title: "Microscopic Pathway Environment",
+    type: "Scientific Animation Direction",
     image: "/assets/hero-lattice.png",
   },
   {
-    title: "Receptor-Level Mechanism",
-    type: "Scientific Illustration",
+    title: "Membrane Receptor Mechanism",
+    type: "Publication Visual Direction",
     image: "/assets/scientific-illustration.png",
   },
   {
-    title: "Transparent Device Assembly",
-    type: "Medical Device CGI",
+    title: "Transparent Device Architecture",
+    type: "Product CGI Direction",
     image: "/assets/product-visualization.png",
   },
   {
-    title: "Animated Sequence Frames",
-    type: "Motion Design",
+    title: "Molecular Sequence Frames",
+    type: "Motion System Direction",
     image: "/assets/motion-graphics.png",
   },
 ];
@@ -100,26 +100,26 @@ const featuredWorks = [
 const portfolioGroups = [
   {
     label: "MOA / MOD Animation",
-    description: "Moving-image case studies for therapeutic mechanisms, microscopic environments and scientific explainers.",
+    description: "Visual directions for therapeutic mechanisms, disease pathways, microscopic transport and platform science.",
     works: [
-      ["Molecular Transformation Sequence", "3D animation still", "/assets/motion-graphics.png"],
-      ["Cellular Pathway Environment", "MOA visual concept", "/assets/hero-lattice.png"],
+      ["Molecular Transformation Sequence", "3D animation direction", "/assets/motion-graphics.png"],
+      ["Cellular Pathway Environment", "MOA environment study", "/assets/hero-lattice.png"],
     ],
   },
   {
     label: "Scientific Illustration",
-    description: "Still-image systems for papers, graphical abstracts, pitch decks and journal cover submissions.",
+    description: "Still-image systems for manuscripts, graphical abstracts, pitch decks and campaign hero visuals.",
     works: [
-      ["Membrane Receptor Study", "3D scientific still", "/assets/scientific-illustration.png"],
-      ["Publication Visual System", "Graphical abstract placeholder", "/assets/hero-lattice.png"],
+      ["Membrane Receptor Study", "3D scientific illustration", "/assets/scientific-illustration.png"],
+      ["Publication Visual System", "Graphical abstract direction", "/assets/hero-lattice.png"],
     ],
   },
   {
     label: "Device & Product CGI",
-    description: "Product-led visuals for medical devices, hardware launches and high-value technical systems.",
+    description: "Product-led visuals for medical devices, diagnostics, hardware launches and high-value technical systems.",
     works: [
-      ["Transparent Device Architecture", "Exploded-view CGI", "/assets/product-visualization.png"],
-      ["Investor Deck Product Hero", "High-resolution render", "/assets/product-visualization.png"],
+      ["Transparent Device Architecture", "Exploded-view direction", "/assets/product-visualization.png"],
+      ["Investor Deck Product Hero", "High-resolution CGI direction", "/assets/product-visualization.png"],
     ],
   },
 ];
@@ -127,23 +127,23 @@ const portfolioGroups = [
 const workflow = [
   {
     icon: Search,
-    title: "Scientific audit",
-    text: "We start by identifying the mechanism, audience, claims, required accuracy and the channels the asset must support.",
+    title: "Understand the science",
+    text: "We clarify the mechanism, audience, claims, references and review requirements before deciding what the viewer needs to see.",
   },
   {
     icon: PenTool,
-    title: "Narrative design",
-    text: "Scripts, beats, figure hierarchy and visual references are shaped into a clear direction before production begins.",
+    title: "Shape the story",
+    text: "Scripts, figure hierarchy, storyboards and visual references are shaped into a clear direction before production begins.",
   },
   {
     icon: Layers3,
-    title: "CGI production",
-    text: "Molecular structures, product forms, materials, lighting, cameras and animation timing are built into a coherent visual system.",
+    title: "Build the visual system",
+    text: "Molecules, products, cells, materials, lighting and motion are developed into a coherent visual language.",
   },
   {
     icon: Sparkles,
-    title: "Launch toolkit",
-    text: "Final files are prepared as stills, loops, edits and campaign-ready exports for scientific and commercial use.",
+    title: "Deliver for every channel",
+    text: "Final assets are prepared as stills, loops, edits and presentation-ready exports for scientific and commercial use.",
   },
 ];
 
@@ -164,36 +164,36 @@ const capabilities = [
 
 const blogPosts = [
   {
-    title: "How MOA Animation Turns Microscopic Complexity Into a Clear Story",
+    title: "How MOA Animation Turns Microscopic Complexity Into a Clear Scientific Story",
     tag: "Medical Animation",
     date: "May 2026",
     readTime: "5 min read",
     summary:
-      "A practical look at translating pathways, receptors and cellular environments into accurate animation for HCP, investor and education audiences.",
+      "How receptors, pathways and cellular environments can be translated into animation that stays accurate while becoming easier to understand.",
   },
   {
-    title: "What Makes a Strong Graphical Abstract for a High-Impact Journal",
+    title: "What Makes a Graphical Abstract Work at Journal, Pitch and Website Scale",
     tag: "Publication Visuals",
     date: "May 2026",
     readTime: "4 min read",
     summary:
-      "Composition, hierarchy, contrast and scientific restraint matter more than decorative complexity when a figure needs to work at thumbnail size.",
+      "A practical look at hierarchy, contrast, simplification and scientific restraint when a single image needs to carry a complex idea.",
   },
   {
-    title: "Using 3D Product Visualization in Medical Device Launch Campaigns",
+    title: "Using 3D Product Visualization to Explain Medical Devices and Technical Systems",
     tag: "Device CGI",
     date: "May 2026",
     readTime: "6 min read",
     summary:
-      "How exploded views, macro details and hero renders can support investor decks, websites, congress screens and sales enablement.",
+      "How exploded views, macro details and hero renders help audiences understand form, function and internal innovation.",
   },
   {
-    title: "Choosing Between Scientific Illustration, Motion Graphics and Full CGI",
+    title: "Choosing Between Scientific Illustration, Motion Graphics and Full 3D Animation",
     tag: "Visual Strategy",
     date: "May 2026",
     readTime: "4 min read",
     summary:
-      "A decision framework for matching the format to the science, the audience, the timeline and the communication channel.",
+      "A decision framework for matching format to mechanism, audience, timeline, review process and final use.",
   },
 ];
 
@@ -225,8 +225,8 @@ function App() {
         : "Lattice Visual | Scientific Animation & Product CGI";
     const description =
       path === "/blog"
-        ? "Insights on MOA animation, scientific illustration, medical device CGI and visual storytelling for research-led teams."
-        : "Lattice Visual creates scientific animation, medical CGI, publication visuals and product visualization for research and technology teams.";
+        ? "Articles on MOA animation, scientific illustration, medical device CGI and visual strategy for research-led teams."
+        : "Lattice Visual creates scientific animation, medical CGI, publication imagery and product visualisation for research-led companies.";
 
     document.title = title;
     document.querySelector("meta[name='description']")?.setAttribute("content", description);
@@ -310,11 +310,11 @@ function Hero({ onNavigate }) {
       <div className="hero-overlay" />
       <div className="mouse-glow" aria-hidden="true" />
       <div className="hero-content">
-        <p className="eyebrow">Scientific Animation · Medical CGI · Product Visualization</p>
-        <h1>Science made cinematic, precise and impossible to ignore.</h1>
+        <p className="eyebrow">Scientific Animation · Medical CGI · Product Visualisation</p>
+        <h1>Complex science, made visible.</h1>
         <p className="hero-copy">
-          Lattice Visual turns mechanisms, molecules and technical systems into premium visual assets
-          for publication, launch, education and investment communication.
+          Lattice Visual creates cinematic scientific animation, publication imagery and product CGI
+          for research-led teams turning complex ideas into stories people can understand, trust and remember.
         </p>
         <div className="hero-actions">
           <button className="primary-button" type="button" onClick={() => onNavigate("#portfolio")}>
@@ -329,7 +329,7 @@ function Hero({ onNavigate }) {
       </div>
       <div className="hero-status" aria-label="Core capabilities">
         <span>MOA animation</span>
-        <span>Publication visuals</span>
+        <span>Publication imagery</span>
         <span>Device CGI</span>
       </div>
     </section>
@@ -584,12 +584,12 @@ function UseCases() {
     <section className="usecase-section" aria-labelledby="usecase-title">
       <div className="section-heading split-heading">
         <div>
-          <p className="eyebrow">What The Site Now Leads With</p>
-          <h2 id="usecase-title">A clearer proposition for research-led teams.</h2>
+          <p className="eyebrow">Where Visualisation Helps</p>
+          <h2 id="usecase-title">For teams whose science needs to move beyond the slide deck.</h2>
         </div>
         <p>
-          The content is structured around what comparable scientific animation studios sell:
-          understanding, accuracy, premium production value and practical campaign assets.
+          Strong scientific visuals do more than decorate a story. They help audiences see a mechanism,
+          follow a product, remember a message and trust the organisation behind it.
         </p>
       </div>
       <div className="usecase-grid">
@@ -609,8 +609,8 @@ function Services() {
     <section id="services" className="services-section" aria-labelledby="services-title">
       <span id="work" className="anchor-proxy" aria-hidden="true" />
       <div className="section-heading">
-        <p className="eyebrow">Core Services</p>
-        <h2 id="services-title">Scientific visuals designed around the audience, not just the asset type.</h2>
+        <p className="eyebrow">Services</p>
+        <h2 id="services-title">Visual communication for molecules, mechanisms, devices and launch stories.</h2>
       </div>
       <div className="service-stack">
         {services.map((service, index) => {
@@ -649,8 +649,8 @@ function FeaturedWork() {
   return (
     <section className="featured-strip" aria-labelledby="featured-title">
       <div className="strip-heading">
-        <p className="eyebrow">Featured Visual Directions</p>
-        <h2 id="featured-title">Homepage-ready placeholders for science, device and motion work.</h2>
+        <p className="eyebrow">Visual Directions</p>
+        <h2 id="featured-title">A preview of the visual language before your real portfolio is added.</h2>
       </div>
       <div className="work-marquee" aria-label="Automatically scrolling featured work">
         <div className="work-track">
@@ -674,36 +674,36 @@ function Studio() {
     <section id="studio" className="studio-section" aria-labelledby="studio-title">
       <div className="section-grid">
         <div>
-          <p className="eyebrow">Studio Method</p>
-          <h2 id="studio-title">From raw science to a visual system that can travel across channels.</h2>
+          <p className="eyebrow">Studio Approach</p>
+          <h2 id="studio-title">A specialist visual partner for science-led communication.</h2>
         </div>
         <div className="about-copy">
           <p>
-            Lattice Visual is positioned as a specialist scientific visualization partner rather than a
-            general design studio. The site now explains the production value, scientific logic and
-            commercial usefulness behind the work.
+            Lattice Visual works where scientific accuracy and visual craft need to meet. The focus is
+            on making invisible processes, technical structures and research narratives easier to explain
+            without flattening the science.
           </p>
           <p>
-            The structure is closer to leading medical animation studios: a cinematic hero, a clear
-            services taxonomy, portfolio categories, process confidence and SEO-led educational content.
+            Each project is treated as a communication system: one core idea can become a hero still,
+            a short animation, a figure, a product visual and a set of campaign assets.
           </p>
         </div>
       </div>
       <div className="proof-grid" aria-label="Lattice Visual strengths">
         <article className="proof-card tilt-card">
           <Microscope size={24} aria-hidden="true" />
-          <strong>Scientific accuracy</strong>
-          <p>Visual decisions are shaped around mechanism, hierarchy, evidence and audience understanding.</p>
+          <strong>Science-led thinking</strong>
+          <p>Visual choices are grounded in mechanism, hierarchy, references and audience understanding.</p>
         </article>
         <article className="proof-card tilt-card">
           <CirclePlay size={24} aria-hidden="true" />
-          <strong>Cinematic production</strong>
-          <p>Lighting, materials, camera movement and composition are treated as core communication tools.</p>
+          <strong>Cinematic execution</strong>
+          <p>Lighting, materials, camera movement and composition are used to make the explanation feel vivid.</p>
         </article>
         <article className="proof-card tilt-card">
           <Waypoints size={24} aria-hidden="true" />
-          <strong>Multi-channel delivery</strong>
-          <p>Assets can be adapted for publications, websites, investor decks, events, campaigns and social.</p>
+          <strong>Channel-aware outputs</strong>
+          <p>Assets can be adapted for publications, websites, decks, events, campaigns and social channels.</p>
         </article>
       </div>
     </section>
@@ -715,12 +715,12 @@ function Portfolio() {
     <section id="portfolio" className="portfolio-section" aria-labelledby="portfolio-title">
       <div className="section-heading split-heading">
         <div>
-          <p className="eyebrow">Portfolio</p>
-          <h2 id="portfolio-title">A divided case-study system ready for real work samples.</h2>
+          <p className="eyebrow">Portfolio Preview</p>
+          <h2 id="portfolio-title">A clear structure for your real work, organised by service type.</h2>
         </div>
         <p>
-          These are temporary placeholders. Once you provide real projects, each image and caption can
-          be swapped into the right service category without changing the page structure.
+          The current visuals are temporary direction images. Your own scientific illustrations,
+          renders and animation stills can replace them while keeping this same category structure.
         </p>
       </div>
       <div className="portfolio-groups">
@@ -753,12 +753,12 @@ function Process() {
     <section id="process" className="process-section" aria-labelledby="process-title">
       <div className="section-grid">
         <div>
-          <p className="eyebrow">Production Process</p>
-          <h2 id="process-title">A workflow that respects both scientific review and visual ambition.</h2>
+          <p className="eyebrow">Process</p>
+          <h2 id="process-title">A workflow built for scientific review and premium production.</h2>
         </div>
         <p className="lead">
-          The process is designed for teams who need work to be accurate enough for technical audiences
-          and polished enough for commercial presentation.
+          The process keeps the science reviewable while giving the final work the polish needed for
+          commercial, academic and investor-facing contexts.
         </p>
       </div>
       <div className="process-grid">
@@ -785,7 +785,7 @@ function Deliverables() {
       </div>
       <div className="deliverables-content">
         <p className="eyebrow">Deliverables</p>
-        <h2 id="deliverables-title">A production toolkit for launch, education, publication and growth.</h2>
+        <h2 id="deliverables-title">One visual system, adapted across the places your audience sees it.</h2>
         <div className="deliverable-list">
           {capabilities.map((item) => (
             <span key={item}>{item}</span>
@@ -802,10 +802,10 @@ function Contact() {
       <div className="contact-inner">
         <img src="/assets/logo.png" alt="Lattice Visual" />
         <p className="eyebrow">Start A Brief</p>
-        <h2 id="contact-title">Bring a mechanism, manuscript, device or pitch into a clearer visual form.</h2>
+        <h2 id="contact-title">Bring a mechanism, manuscript, device or platform story into focus.</h2>
         <p>
           Send a research summary, sketch, manuscript excerpt, CAD reference, deck or animation outline.
-          Lattice Visual can shape it into a production scope and visual direction.
+          Lattice Visual can help turn it into a focused visual brief and production plan.
         </p>
         <a className="primary-button" href="mailto:latticevisualltd@gmail.com">
           <Mail size={18} strokeWidth={2.1} />
@@ -820,11 +820,11 @@ function BlogPage({ onNavigate }) {
   return (
     <section className="blog-page" aria-labelledby="blog-title">
       <div className="blog-hero">
-        <p className="eyebrow">SEO Blog</p>
-        <h1 id="blog-title">Insights on scientific animation, medical CGI and technical storytelling.</h1>
+        <p className="eyebrow">Journal</p>
+        <h1 id="blog-title">Notes on scientific animation, medical CGI and visual strategy.</h1>
         <p>
-          This page is structured for search-friendly educational articles. The current posts are
-          editorial placeholders and can be expanded into full SEO pages as the content strategy grows.
+          Search-friendly articles can help future clients understand the value of MOA animation,
+          publication visuals, product CGI and campaign-ready scientific content.
         </p>
         <button className="ghost-button" type="button" onClick={() => onNavigate("/")}>
           Back to homepage
