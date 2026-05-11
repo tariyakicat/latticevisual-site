@@ -48,15 +48,6 @@ const services = [
       "Clean, high-fidelity product visuals for medical devices, diagnostics, hardware and advanced manufacturing. Designed to reveal how a product works, what makes it different and where the engineering value sits.",
     items: ["Launch and website product renders", "Exploded views and internal system visuals", "Macro material, sensor and component detail"],
   },
-  {
-    eyebrow: "Campaign Visual Systems",
-    title: "A coherent visual language for launch",
-    image: "/assets/hero-lattice.png",
-    icon: CirclePlay,
-    intro:
-      "Still frames, loops, short edits and motion graphics adapted from a core visual idea so teams can communicate consistently across web, pitch, conference and sales environments.",
-    items: ["Website and social motion loops", "Pitch deck and PR visual kits", "Conference screen and booth content"],
-  },
 ];
 
 const useCases = [
@@ -76,8 +67,8 @@ const useCases = [
 
 const featuredWorks = [
   {
-    title: "Microscopic Pathway Environment",
-    type: "Scientific Animation Direction",
+    title: "Molecular Mechanism",
+    type: "Mechanism Visual Direction",
     image: "/assets/hero-lattice.png",
   },
   {
@@ -86,14 +77,9 @@ const featuredWorks = [
     image: "/assets/scientific-illustration.png",
   },
   {
-    title: "Transparent Device Architecture",
+    title: "Exploded View",
     type: "Product CGI Direction",
     image: "/assets/product-visualization.png",
-  },
-  {
-    title: "Molecular Sequence Frames",
-    type: "Motion System Direction",
-    image: "/assets/motion-graphics.png",
   },
 ];
 
@@ -118,7 +104,7 @@ const portfolioGroups = [
     label: "Device & Product CGI",
     description: "Product-led visuals for medical devices, diagnostics, hardware launches and high-value technical systems.",
     works: [
-      ["Transparent Device Architecture", "Exploded-view direction", "/assets/product-visualization.png"],
+      ["Exploded View", "Product structure direction", "/assets/product-visualization.png"],
       ["Investor Deck Product Hero", "High-resolution CGI direction", "/assets/product-visualization.png"],
     ],
   },
@@ -138,7 +124,7 @@ const workflow = [
   {
     icon: Layers3,
     title: "Build the visual system",
-    text: "Molecules, products, cells, materials, lighting and motion are developed into a coherent visual language.",
+    text: "Molecules, products, cells, materials, lighting and camera direction are developed into a coherent visual language.",
   },
   {
     icon: Sparkles,
@@ -156,7 +142,6 @@ const capabilities = [
   "2D mechanism diagrams",
   "Exploded-view device CGI",
   "4K product renders",
-  "Short-form motion loops",
   "Website hero visuals",
   "Investor deck assets",
   "Conference screen content",
@@ -311,7 +296,7 @@ function Hero({ onNavigate }) {
       <div className="mouse-glow" aria-hidden="true" />
       <div className="hero-content">
         <p className="eyebrow">Scientific Animation · Medical CGI · Product Visualisation</p>
-        <h1>Complex science, made visible.</h1>
+        <h1>The art of structured vision</h1>
         <p className="hero-copy">
           Lattice Visual creates cinematic scientific animation, publication imagery and product CGI
           for research-led teams turning complex ideas into stories people can understand, trust and remember.
@@ -650,7 +635,7 @@ function FeaturedWork() {
     <section className="featured-strip" aria-labelledby="featured-title">
       <div className="strip-heading">
         <p className="eyebrow">Visual Directions</p>
-        <h2 id="featured-title">A preview of the visual language before your real portfolio is added.</h2>
+        <h2 id="featured-title">Selected directions for molecular mechanisms, scientific illustration and product visualisation.</h2>
       </div>
       <div className="work-marquee" aria-label="Automatically scrolling featured work">
         <div className="work-track">
