@@ -1,10 +1,10 @@
 # Portfolio Image Replacement Guide
 
-Use this guide when replacing the temporary AI-generated images with real Lattice Visual work.
+The current website uses CSS-built visual placeholders so the layout can be reviewed before real work is added. Replace them with your own portfolio images when ready.
 
 ## Recommended Folder
 
-Place real portfolio assets here:
+Place real work assets here:
 
 ```text
 public/assets/portfolio/
@@ -13,22 +13,23 @@ public/assets/portfolio/
 Suggested file names:
 
 ```text
-moa-receptor-animation-still.webp
-scientific-graphical-abstract.webp
-device-exploded-view.webp
-motion-sequence-frames.webp
+nova-skin-lab-packaging.webp
+morrow-coffee-identity.webp
+aurelia-gifting-packaging.webp
+kiko-home-campaign.webp
+foundry-market-direction.webp
+luna-bakehouse-support.webp
 ```
 
 ## Recommended Exports
 
 - Format: `.webp` preferred, `.jpg` or `.png` also works
-- Portfolio cards: 1600 x 1100 px or larger
-- Wide hero / featured images: 2400 x 1350 px or larger
-- Keep important subject matter away from the bottom edge because captions sit over the image
-- Avoid screenshots with UI controls, watermarks, or tiny unreadable labels
-- If a client project is confidential, crop, anonymise, or use a derivative still
+- Work grid images: 1600 px wide or larger
+- Case study hero images: 2400 px wide or larger
+- Keep important product or packaging details away from the bottom-left because hover captions appear there
+- Use clean mockups, campaign images, packaging closeups, product cards, posters, e-commerce visuals or brand guideline spreads
 
-## Where To Update The Site
+## Where To Update
 
 Open:
 
@@ -36,36 +37,30 @@ Open:
 src/main.jsx
 ```
 
-Update these arrays near the top of the file:
+Update the `projects` array near the top of the file.
 
-- `featuredWorks`
-- `portfolioGroups`
-- service `image` fields inside `services`
-
-Example:
+For now each project has a CSS placeholder:
 
 ```js
-image: "/assets/portfolio/moa-receptor-animation-still.webp"
+visual: "art-nova"
 ```
 
-## Suggested Portfolio Captions
+When real images are ready, change each project to include an image path, for example:
 
-Use short captions that describe the communication purpose, not just the software output.
-
-Good:
-
-```text
-MOA animation still
-Graphical abstract for receptor signalling
-Exploded-view device launch render
-Conference loop for platform technology
+```js
+image: "/assets/portfolio/nova-skin-lab-packaging.webp"
 ```
 
-Avoid:
+Then update the `ProjectVisual` component to render the image for projects with an `image` field. If you send me the final images, I can do this replacement directly.
+
+## Good Portfolio Captions
+
+Use captions that describe the project type and business purpose:
 
 ```text
-Image 1
-Render test
-My work
-3D design
+Skincare packaging system
+Coffee brand identity
+Gift packaging and product cards
+Retail campaign launch visuals
+Monthly visual support
 ```
