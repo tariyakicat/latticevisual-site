@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
+import { motion } from "framer-motion";
 import "./styles.css";
 
 const navItems = [
@@ -9,6 +10,9 @@ const navItems = [
   { label: "News", path: "/news" },
   { label: "Contact", path: "/contact" },
 ];
+
+const easeOut = [0.16, 1, 0.3, 1];
+const viewportOnce = { once: true, amount: 0.08 };
 
 const services = [
   {
@@ -42,6 +46,19 @@ const disciplines = ["All", "Brand Identity", "Brand Direction", "Packaging & Pr
 const sectors = ["All", "Beauty", "Food & Drink", "Lifestyle", "Retail", "Wellness"];
 
 const projects = [
+  {
+    slug: "yoso",
+    title: "YŌSO 養素",
+    discipline: "Packaging & Product",
+    sector: "Beauty",
+    year: "2024",
+    client: "YŌSO Skincare",
+    ratio: "wide",
+    visual: "art-yoso",
+    intro:
+      "Brand identity and packaging for a modern Chinese botanical skincare brand built around quiet ritual, precise formulation and a restrained product system.",
+    quote: "Precision and patience became the central tension of the identity.",
+  },
   {
     slug: "nova-skin-lab",
     title: "Nova Skin Lab",
@@ -121,6 +138,255 @@ const projects = [
     quote: "Consistency matters most when a brand is always making something new.",
   },
 ];
+
+const yosoCase = {
+  slug: "yoso",
+  title: "YŌSO 養素",
+  tagline: "Brand identity and packaging for a modern Chinese botanical skincare brand.",
+  services: ["Brand Identity", "Packaging & Product Visuals"],
+  client: "YŌSO Skincare",
+  sector: ["Consumer Brands", "Fashion & Beauty"],
+  year: 2024,
+  heroVideo: "1154343027",
+  heroImage: "/images/yoso/hero.jpg",
+  coverImage: "/images/yoso/cover.jpg",
+  coverVisual: "art-yoso",
+  pullQuotes: [
+    {
+      id: 1,
+      insertAfterGroup: 0,
+      text:
+        "Lattice Visual built YŌSO's identity around a single tension: the precision of modern formulation and the patience of traditional botanical knowledge.",
+    },
+    {
+      id: 2,
+      insertAfterGroup: 2,
+      text:
+        "The mark's inner circle contracts and expands across scales, from a 12mm jar label to a 3-meter retail banner.",
+    },
+    {
+      id: 3,
+      insertAfterGroup: 4,
+      text:
+        "Mist, moongrass and pressed mineral were chosen not as decorative names, but as emotional coordinates for the product line.",
+    },
+  ],
+  imageGroups: [
+    {
+      id: 1,
+      layout: "full",
+      images: [{ src: "/images/yoso/01-logo-dark.jpg", alt: "YŌSO logo on deep ink background", aspectRatio: "16/9" }],
+    },
+    {
+      id: 2,
+      layout: "2col",
+      images: [
+        { src: "/images/yoso/02-logo-white.jpg", alt: "YŌSO logo on parchment background", aspectRatio: "4/3" },
+        { src: "/images/yoso/03-mark-detail.jpg", alt: "YŌSO brand mark construction detail", aspectRatio: "4/3" },
+      ],
+    },
+    {
+      id: 3,
+      layout: "full",
+      images: [{ src: "/images/yoso/04-color-type.jpg", alt: "YŌSO colour palette and type specimen", aspectRatio: "16/9" }],
+    },
+    {
+      id: 4,
+      layout: "2col",
+      images: [
+        { src: "/images/yoso/05-packaging-serum.jpg", alt: "Serum bottle packaging front", aspectRatio: "3/4" },
+        { src: "/images/yoso/06-packaging-cream.jpg", alt: "Face cream jar packaging", aspectRatio: "3/4" },
+      ],
+    },
+    {
+      id: 5,
+      layout: "full",
+      images: [{ src: "/images/yoso/07-packaging-set.jpg", alt: "Full YŌSO product lineup on stone surface", aspectRatio: "16/9" }],
+    },
+    {
+      id: 6,
+      layout: "3col",
+      images: [
+        { src: "/images/yoso/08-render-01.jpg", alt: "Serum render close-up", aspectRatio: "1/1" },
+        { src: "/images/yoso/09-render-02.jpg", alt: "Cream jar lid render detail", aspectRatio: "1/1" },
+        { src: "/images/yoso/10-render-03.jpg", alt: "Mask tube product render", aspectRatio: "1/1" },
+      ],
+    },
+    {
+      id: 7,
+      layout: "full",
+      images: [{ src: "/images/yoso/11-lifestyle-01.jpg", alt: "YŌSO product on marble shelf in morning light", aspectRatio: "21/9" }],
+    },
+    {
+      id: 8,
+      layout: "2col",
+      images: [
+        { src: "/images/yoso/12-label-detail.jpg", alt: "Jar label close-up with embossed mark", aspectRatio: "1/1" },
+        { src: "/images/yoso/13-card.jpg", alt: "YŌSO brand card and tissue paper", aspectRatio: "1/1" },
+      ],
+    },
+    {
+      id: 9,
+      layout: "full",
+      images: [{ src: "/images/yoso/14-giftbox.jpg", alt: "YŌSO gift packaging set with ribbon", aspectRatio: "16/9" }],
+    },
+    {
+      id: 10,
+      layout: "2col",
+      images: [
+        { src: "/images/yoso/15-ecom-01.jpg", alt: "YŌSO e-commerce main product image", aspectRatio: "1/1" },
+        { src: "/images/yoso/16-ecom-02.jpg", alt: "YŌSO texture detail e-commerce image", aspectRatio: "1/1" },
+      ],
+    },
+    {
+      id: 11,
+      layout: "full",
+      images: [{ src: "/images/yoso/17-brand-scale.jpg", alt: "YŌSO brand system applied across all SKUs", aspectRatio: "16/9" }],
+    },
+  ],
+  bodyText: [
+    "YŌSO (養素) is a Chinese skincare brand built on the premise that botanical wisdom and clinical precision are not opposites. Founded in 2024, the brand launched with four core products: a facial oil, an essence, a cream and a sheet mask. Each formula is centred on a single hero botanical ingredient, rigorously dosed.",
+    "Lattice Visual was commissioned to build the brand from the ground up: name interpretation, visual identity, packaging design and a full suite of product visualization for digital launch. The central challenge was to differentiate YŌSO in a category saturated with either clinical-white minimalism or over-ornamented heritage aesthetics. The brief called for a third path: quieter, more considered and entirely its own.",
+    "The identity is anchored by a circular mark. A compressed Chinese character sits at its centre: 養, meaning to nurture, drawn to just barely legible so recognition builds slowly rather than arriving all at once. The outer ring carries the Latin name, set in a custom-spaced geometric sans developed to hold equal weight at 8pt on a label and 80pt on a billboard.",
+    "Color was developed from the products themselves. The primary palette, deep ink, mulberry paper and pale celery, was derived from the visual language of traditional Chinese herbalism: ink stone, hand-pressed paper and fresh-cut fennel. A single warm copper accent appears only on embossed finishes and foil elements, used as punctuation rather than decoration.",
+    "Packaging was designed to occupy the still-rare territory between pharmacy restraint and luxury excess. The glass bottle and jar forms are round-shouldered and weighted at the base: stable, generous and unhurried. Labels are single-color offset printed on uncoated stock, with the brand mark embossed on the lid of each jar.",
+    "For the digital launch, Lattice Visual produced a complete set of 3D product renderings: white-background e-commerce shots, atmospheric lifestyle renders set against stone and linen, and a short looping animation showing the serum texture under controlled light. These assets gave YŌSO a complete visual toolkit for its flagship store and social channels before final photography began.",
+  ],
+  collaborators: [],
+  nextProject: {
+    title: "Nova Skin Lab",
+    slug: "nova-skin-lab",
+    thumbnail: "/images/nova-skin-lab/cover.jpg",
+    visual: "art-nova",
+    tagline: "A refined packaging and product visual system for clinical skincare.",
+  },
+};
+
+const sectorLabels = {
+  Beauty: ["Consumer Brands", "Fashion & Beauty"],
+  "Food & Drink": ["Hospitality", "Food & Drink"],
+  Lifestyle: ["Consumer Brands", "Lifestyle"],
+  Retail: ["Retail", "Consumer Goods"],
+  Wellness: ["Health", "Wellness"],
+};
+
+const serviceLabels = {
+  "Brand Identity": ["Brand Identity", "Brand Direction"],
+  "Brand Direction": ["Brand Direction", "Campaign & Communication Design"],
+  "Packaging & Product": ["Packaging & Product Visuals", "Brand Identity"],
+  "Campaign Design": ["Campaign & Communication Design", "Product Visuals"],
+  "Ongoing Support": ["Ongoing Visual Support", "Campaign & Communication Design"],
+};
+
+function createCaseStudy(project, index) {
+  const nextProject = projects[(index + 1) % projects.length];
+  const imageRoot = `/images/${project.slug}`;
+  const servicesForCase = serviceLabels[project.discipline] || [project.discipline];
+  const sectorForCase = sectorLabels[project.sector] || [project.sector];
+
+  return {
+    slug: project.slug,
+    title: project.title,
+    tagline: project.intro,
+    services: servicesForCase,
+    client: project.client,
+    sector: sectorForCase,
+    year: Number(project.year) || 2026,
+    heroImage: `${imageRoot}/hero.jpg`,
+    coverImage: `${imageRoot}/cover.jpg`,
+    coverVisual: project.visual,
+    pullQuotes: [
+      {
+        id: 1,
+        insertAfterGroup: 0,
+        text: `Lattice Visual shaped ${project.title}'s visual language around a clear tension: commercial clarity and a more memorable emotional register.`,
+      },
+      {
+        id: 2,
+        insertAfterGroup: 2,
+        text: `The system was designed to hold its character across scales, from the smallest digital crop to the most visible launch asset.`,
+      },
+      {
+        id: 3,
+        insertAfterGroup: 4,
+        text: `Color, spacing and material cues were treated as working tools, giving every touchpoint a recognisable but flexible rhythm.`,
+      },
+    ],
+    imageGroups: [
+      {
+        id: 1,
+        layout: "full",
+        images: [{ src: `${imageRoot}/01-identity-dark.jpg`, alt: `${project.title} identity on dark background`, aspectRatio: "16/9" }],
+      },
+      {
+        id: 2,
+        layout: "2col",
+        images: [
+          { src: `${imageRoot}/02-identity-light.jpg`, alt: `${project.title} identity on light background`, aspectRatio: "4/3" },
+          { src: `${imageRoot}/03-mark-detail.jpg`, alt: `${project.title} mark and detail study`, aspectRatio: "4/3" },
+        ],
+      },
+      {
+        id: 3,
+        layout: "full",
+        images: [{ src: `${imageRoot}/04-system.jpg`, alt: `${project.title} visual system overview`, aspectRatio: "16/9" }],
+      },
+      {
+        id: 4,
+        layout: "portrait-right",
+        images: [
+          { src: `${imageRoot}/05-primary-application.jpg`, alt: `${project.title} primary application`, aspectRatio: "16/9" },
+          { src: `${imageRoot}/06-secondary-application.jpg`, alt: `${project.title} secondary application`, aspectRatio: "3/4" },
+        ],
+      },
+      {
+        id: 5,
+        layout: "3col",
+        images: [
+          { src: `${imageRoot}/07-detail-01.jpg`, alt: `${project.title} detail image one`, aspectRatio: "1/1" },
+          { src: `${imageRoot}/08-detail-02.jpg`, alt: `${project.title} detail image two`, aspectRatio: "1/1" },
+          { src: `${imageRoot}/09-detail-03.jpg`, alt: `${project.title} detail image three`, aspectRatio: "1/1" },
+        ],
+      },
+      {
+        id: 6,
+        layout: "full",
+        images: [{ src: `${imageRoot}/10-scale.jpg`, alt: `${project.title} system at scale`, aspectRatio: "21/9" }],
+      },
+      {
+        id: 7,
+        layout: "asymmetric",
+        images: [
+          { src: `${imageRoot}/11-context.jpg`, alt: `${project.title} contextual brand image`, aspectRatio: "4/3" },
+          { src: `${imageRoot}/12-material.jpg`, alt: `${project.title} material or product detail`, aspectRatio: "3/4" },
+        ],
+      },
+      {
+        id: 8,
+        layout: "full",
+        images: [{ src: `${imageRoot}/13-rollout.jpg`, alt: `${project.title} rollout image`, aspectRatio: "16/9" }],
+      },
+    ],
+    bodyText: [
+      `${project.client} is a ${project.sector.toLowerCase()} brand working in a market where visual memory is built quickly and lost just as quickly. The brand needed an identity that could carry product, campaign and retail communication without feeling inflated. Its visual presence had to feel confident enough for launch and restrained enough to grow.`,
+      `Lattice Visual was asked to define the visual direction and translate it into a practical design system. The challenge was not to add more decoration, but to make every repeated element work harder: mark, type, color, image crop and layout rhythm. The brief called for a visual language that could move between founder-led storytelling and polished commercial presentation.`,
+      `The identity work began with proportion. The mark was treated as an anchor rather than a badge, designed to sit quietly on product surfaces and expand with authority across larger campaign formats. Typography was set with a geometric sans for clarity, paired with more generous spacing to keep the system calm under dense information.`,
+      `Color was developed from the brand's own materials and audience cues. Instead of relying on a single fashionable shade, the palette combines black ink, warm paper and one sharper accent tone. This gives the system contrast without turning every touchpoint into a poster.`,
+      `Applications were designed as a family: launch visuals, product cards, e-commerce compositions, campaign frames and social templates all share the same grid logic. Each format has enough independence to feel intentional, while still returning to the same core behaviour of type, image and negative space.`,
+      `For rollout, Lattice Visual prepared the assets as a working toolkit rather than a static presentation. The result is a case study structure ready for final photography, motion work and product imagery, allowing the brand to replace placeholder material with real launch assets as they are produced.`,
+    ],
+    collaborators: [],
+    nextProject: {
+      title: nextProject.title,
+      slug: nextProject.slug,
+      thumbnail: `/images/${nextProject.slug}/cover.jpg`,
+      visual: nextProject.visual,
+      tagline: nextProject.intro,
+    },
+  };
+}
+
+const caseStudies = projects.map((project, index) => (project.slug === "yoso" ? yosoCase : createCaseStudy(project, index)));
 
 const newsPosts = [
   {
@@ -202,7 +468,11 @@ function renderRoute(path, navigate) {
 
 function getPageTitle(path) {
   if (path === "/work") return "Work | Lattice Visual";
-  if (path.startsWith("/work/")) return "Case Study | Lattice Visual";
+  if (path.startsWith("/work/")) {
+    const slug = path.replace("/work/", "");
+    const caseStudy = caseStudies.find((item) => item.slug === slug);
+    return `${caseStudy?.title || "Case Study"} | Lattice Visual`;
+  }
   if (path === "/services") return "Services | Lattice Visual";
   if (path === "/about") return "About | Lattice Visual";
   if (path === "/news" || path === "/blog") return "News | Lattice Visual";
@@ -533,61 +803,205 @@ function FormSelect({ label, name, options }) {
 }
 
 function CaseStudyPage({ slug, onNavigate }) {
-  const project = projects.find((item) => item.slug === slug) || projects[0];
-  const nextProject = projects[(projects.findIndex((item) => item.slug === project.slug) + 1) % projects.length];
+  const caseStudy = caseStudies.find((item) => item.slug === slug) || yosoCase;
 
   return (
     <article className="case-study">
-      <section className="case-hero">
-        <ProjectVisual visual={project.visual} />
-        <div>
-          <span>{project.discipline}</span>
-          <h1>{project.title}</h1>
-          <p>
-            {project.client} · {project.year}
-          </p>
-        </div>
-      </section>
-      <section className="case-intro">
-        <p>{project.intro}</p>
-      </section>
-      <CaseImageBlock visual={project.visual} />
-      <blockquote>{project.quote}</blockquote>
-      <section className="case-text">
-        <p>
-          This case study layout is prepared for real project photography, packaging mockups, campaign assets and process images. When your own work is ready, the placeholder visual can be replaced with image files while keeping this editorial structure.
-        </p>
-      </section>
-      <section className="case-meta">
-        <div>
-          <span>Client</span>
-          <strong>{project.client}</strong>
-        </div>
-        <div>
-          <span>Discipline</span>
-          <strong>{project.discipline}</strong>
-        </div>
-        <div>
-          <span>Sector</span>
-          <strong>{project.sector}</strong>
-        </div>
-      </section>
-      <button className="next-project" type="button" onClick={() => onNavigate(`/work/${nextProject.slug}`)}>
-        <ProjectVisual visual={nextProject.visual} />
-        <span>Next Project</span>
-        <strong>{nextProject.title}</strong>
-      </button>
+      <CaseHeader caseStudy={caseStudy} />
+      <CaseHero caseStudy={caseStudy} />
+      <CaseBody caseStudy={caseStudy} />
+      <CaseText bodyText={caseStudy.bodyText} />
+      <CaseMetadata caseStudy={caseStudy} />
+      <NextProject nextProject={caseStudy.nextProject} onNavigate={onNavigate} />
     </article>
   );
 }
 
-function CaseImageBlock({ visual }) {
+function CaseHeader({ caseStudy }) {
   return (
-    <section className="case-image-row">
-      <ProjectVisual visual={visual} />
-      <ProjectVisual visual={visual} />
+    <header className="case-header">
+      <motion.div className="case-tags" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1, duration: 0.6, ease: easeOut }}>
+        {caseStudy.services.map((service) => (
+          <span key={service}>{service}</span>
+        ))}
+      </motion.div>
+      <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25, duration: 0.6, ease: easeOut }}>
+        {caseStudy.title}
+      </motion.h1>
+      <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4, duration: 0.6, ease: easeOut }}>
+        {caseStudy.tagline}
+      </motion.p>
+    </header>
+  );
+}
+
+function CaseHero({ caseStudy }) {
+  return (
+    <section className="case-hero-video" aria-label={`${caseStudy.title} hero`}>
+      {caseStudy.heroVideo ? (
+        <iframe
+          title={`${caseStudy.title} hero video`}
+          src={`https://player.vimeo.com/video/${caseStudy.heroVideo}?autoplay=1&muted=1&loop=1&background=1`}
+          allow="autoplay; fullscreen; picture-in-picture"
+          loading="lazy"
+        />
+      ) : (
+        <CaseHeroImage src={caseStudy.heroImage} alt={`${caseStudy.title} hero image`} visual={caseStudy.coverVisual} />
+      )}
     </section>
   );
+}
+
+function CaseHeroImage({ src, alt, visual }) {
+  const [failed, setFailed] = useState(!src);
+
+  if (failed) {
+    return (
+      <div className="case-hero-fallback">
+        <ProjectVisual visual={visual || "art-yoso"} />
+      </div>
+    );
+  }
+
+  return <img src={src} alt={alt} onError={() => setFailed(true)} />;
+}
+
+function CaseBody({ caseStudy }) {
+  return (
+    <section className="case-body">
+      {caseStudy.imageGroups.map((group) => (
+        <React.Fragment key={group.id}>
+          {caseStudy.pullQuotes
+            .filter((quote) => quote.insertAfterGroup === group.id - 1)
+            .map((quote) => (
+              <PullQuote key={quote.id} text={quote.text} />
+            ))}
+          <CaseImageGroup group={group} />
+        </React.Fragment>
+      ))}
+    </section>
+  );
+}
+
+function PullQuote({ text }) {
+  return (
+    <motion.blockquote
+      className="case-pullquote"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={viewportOnce}
+      transition={{ duration: 0.7, ease: easeOut }}
+    >
+      {text}
+    </motion.blockquote>
+  );
+}
+
+function CaseImageGroup({ group }) {
+  return (
+    <motion.section
+      className={`case-image-group layout-${group.layout}`}
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={viewportOnce}
+      transition={{ duration: 0.6, ease: easeOut }}
+    >
+      {group.images.map((image, index) => (
+        <CaseImage image={image} key={`${group.id}-${image.src}`} index={index} />
+      ))}
+    </motion.section>
+  );
+}
+
+function CaseImage({ image, index }) {
+  const [failed, setFailed] = useState(!image.src);
+  const ratioClass = `ratio-${image.aspectRatio.replace("/", "-")}`;
+
+  return (
+    <figure className={`case-image ${ratioClass} image-${index + 1}`}>
+      {failed ? (
+        <div className="case-image-placeholder" aria-label={image.alt}>
+          <span />
+          <span />
+          <span />
+          <span />
+        </div>
+      ) : (
+        <img src={image.src} alt={image.alt} loading="lazy" onError={() => setFailed(true)} />
+      )}
+      {image.caption && <figcaption>{image.caption}</figcaption>}
+    </figure>
+  );
+}
+
+function CaseText({ bodyText }) {
+  return (
+    <section className="case-longform">
+      <div className="case-longform-separator" />
+      <div className="case-longform-inner">
+        {bodyText.map((paragraph, index) => (
+          <motion.p
+            key={paragraph}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={viewportOnce}
+            transition={{ delay: index * 0.08, duration: 0.6, ease: easeOut }}
+          >
+            {paragraph}
+          </motion.p>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function CaseMetadata({ caseStudy }) {
+  const items = [
+    { label: "Client", values: [caseStudy.client] },
+    { label: "Sector", values: caseStudy.sector },
+    { label: "Services", values: caseStudy.services },
+    { label: "Year", values: [String(caseStudy.year)] },
+    { label: "Studio", values: ["Lattice Visual"] },
+  ];
+
+  return (
+    <section className="case-metadata">
+      <div>
+        {items.map((item) => (
+          <article key={item.label}>
+            <span>{item.label}</span>
+            {item.values.map((value) => (
+              <strong key={value}>{value}</strong>
+            ))}
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function NextProject({ nextProject, onNavigate }) {
+  return (
+    <button className="next-project" type="button" onClick={() => onNavigate(`/work/${nextProject.slug}`)}>
+      <CaseNextVisual nextProject={nextProject} />
+      <span className="next-overlay" />
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce} transition={{ duration: 0.6, ease: easeOut }}>
+        <span>Next Project</span>
+        <strong>{nextProject.title}</strong>
+        <p>{nextProject.tagline}</p>
+      </motion.div>
+    </button>
+  );
+}
+
+function CaseNextVisual({ nextProject }) {
+  const [failed, setFailed] = useState(!nextProject.thumbnail);
+
+  if (failed) {
+    return <ProjectVisual visual={nextProject.visual || "art-yoso"} />;
+  }
+
+  return <img src={nextProject.thumbnail} alt="" loading="lazy" onError={() => setFailed(true)} />;
 }
 
 function ProjectCard({ project, featured = false, onNavigate }) {
