@@ -725,6 +725,43 @@ a {
   background: #f7e8c8;
 }
 
+.art-senka {
+  background: #dff5ed;
+}
+
+.art-senka::before {
+  width: 44%;
+  height: 62%;
+  left: 14%;
+  top: 19%;
+  background: #ffffff;
+}
+
+.art-senka::after {
+  width: 34%;
+  height: 46%;
+  right: 14%;
+  top: 27%;
+  background: #7dc4ad;
+}
+
+.art-senka span:nth-child(1) {
+  width: 64%;
+  height: 1px;
+  left: 18%;
+  top: 50%;
+  background: #0f0f14;
+}
+
+.art-senka span:nth-child(2) {
+  width: 12%;
+  height: 12%;
+  left: 44%;
+  top: 44%;
+  border-radius: 50%;
+  background: #c8ff00;
+}
+
 .process-line {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1091,6 +1128,7 @@ form button:hover {
 }
 
 .case-hero-video iframe,
+.case-hero-video video,
 .case-hero-video img,
 .case-hero-video .project-visual {
   position: absolute;
@@ -1100,6 +1138,10 @@ form button:hover {
   border: 0;
   object-fit: cover;
   pointer-events: none;
+}
+
+.case-hero-video video {
+  opacity: 0.75;
 }
 
 .case-hero-fallback {

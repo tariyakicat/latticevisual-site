@@ -13,6 +13,7 @@ const navItems = [
 
 const easeOut = [0.16, 1, 0.3, 1];
 const viewportOnce = { once: true, amount: 0.08 };
+const localVideoBase = "/videos";
 
 const services = [
   {
@@ -137,6 +138,19 @@ const projects = [
       "Monthly visual support for social drops, seasonal menus, packaging extensions and e-commerce refreshes.",
     quote: "Consistency matters most when a brand is always making something new.",
   },
+  {
+    slug: "senka-campaign",
+    title: "SENKA 鲜 — Campaign Design",
+    discipline: "Campaign Design",
+    sector: "Beauty",
+    year: "2024",
+    client: "SENKA 鲜",
+    ratio: "wide",
+    visual: "art-senka",
+    intro:
+      "Social and e-commerce campaign design for a seasonal skincare launch, built around freshness, product rhythm and digital retail clarity.",
+    quote: "The campaign needed to feel immediate, seasonal and easy to scale across every launch asset.",
+  },
 ];
 
 const yosoCase = {
@@ -147,9 +161,10 @@ const yosoCase = {
   client: "YŌSO Skincare",
   sector: ["Consumer Brands", "Fashion & Beauty"],
   year: 2024,
-  heroVideo: "1154343027",
-  heroImage: "/images/yoso/hero.jpg",
-  coverImage: "/images/yoso/cover.jpg",
+  localVideo: "yoso-hero",
+  heroVideo: "",
+  heroImage: "/images/yoso/01-logo-dark.jpg",
+  coverImage: "/images/yoso/07-packaging-set.jpg",
   coverVisual: "art-yoso",
   pullQuotes: [
     {
@@ -160,105 +175,105 @@ const yosoCase = {
     },
     {
       id: 2,
-      insertAfterGroup: 2,
+      insertAfterGroup: 3,
       text:
-        "The mark's inner circle contracts and expands across scales, from a 12mm jar label to a 3-meter retail banner.",
+        "The mark's inner drop holds its weight at 12mm on a jar label and at 3 metres on a retail banner — without becoming either timid or loud.",
     },
     {
       id: 3,
-      insertAfterGroup: 4,
+      insertAfterGroup: 6,
       text:
-        "Mist, moongrass and pressed mineral were chosen not as decorative names, but as emotional coordinates for the product line.",
+        "Deep ink, parchment, pale celery, and warm copper — chosen not as a palette but as four precise emotional coordinates for a brand that refuses to rush.",
     },
   ],
   imageGroups: [
     {
       id: 1,
       layout: "full",
-      images: [{ src: "/images/yoso/01-logo-dark.jpg", alt: "YŌSO logo on deep ink background", aspectRatio: "16/9" }],
+      images: [{ src: "/images/yoso/01-logo-dark.jpg", alt: "YŌSO mark on deep ink background", aspectRatio: "16/9" }],
     },
     {
       id: 2,
       layout: "2col",
       images: [
-        { src: "/images/yoso/02-logo-white.jpg", alt: "YŌSO logo on parchment background", aspectRatio: "4/3" },
-        { src: "/images/yoso/03-mark-detail.jpg", alt: "YŌSO brand mark construction detail", aspectRatio: "4/3" },
+        { src: "/images/yoso/02-logo-white.jpg", alt: "YŌSO mark on cream paper card", aspectRatio: "4/3" },
+        { src: "/images/yoso/03-mark-detail.jpg", alt: "YŌSO mark — macro detail on uncoated paper", aspectRatio: "4/3" },
       ],
     },
     {
       id: 3,
       layout: "full",
-      images: [{ src: "/images/yoso/04-color-type.jpg", alt: "YŌSO colour palette and type specimen", aspectRatio: "16/9" }],
+      images: [{ src: "/images/yoso/04-color-type.jpg", alt: "YŌSO color palette and typeface specimen", aspectRatio: "16/9" }],
     },
     {
       id: 4,
       layout: "2col",
       images: [
-        { src: "/images/yoso/05-packaging-serum.jpg", alt: "Serum bottle packaging front", aspectRatio: "3/4" },
-        { src: "/images/yoso/06-packaging-cream.jpg", alt: "Face cream jar packaging", aspectRatio: "3/4" },
+        { src: "/images/yoso/05-packaging-serum.jpg", alt: "YŌSO Botanical Serum, pale grey stone", aspectRatio: "3/4" },
+        { src: "/images/yoso/06-packaging-cream.jpg", alt: "YŌSO Deep Moisture Cream, travertine", aspectRatio: "3/4" },
       ],
     },
     {
       id: 5,
       layout: "full",
-      images: [{ src: "/images/yoso/07-packaging-set.jpg", alt: "Full YŌSO product lineup on stone surface", aspectRatio: "16/9" }],
+      images: [{ src: "/images/yoso/07-packaging-set.jpg", alt: "YŌSO full product line — morning light on limestone", aspectRatio: "16/9" }],
     },
     {
       id: 6,
       layout: "3col",
       images: [
-        { src: "/images/yoso/08-render-01.jpg", alt: "Serum render close-up", aspectRatio: "1/1" },
-        { src: "/images/yoso/09-render-02.jpg", alt: "Cream jar lid render detail", aspectRatio: "1/1" },
-        { src: "/images/yoso/10-render-03.jpg", alt: "Mask tube product render", aspectRatio: "1/1" },
+        { src: "/images/yoso/08-render-01.jpg", alt: "CGI render — Botanical Serum dropper", aspectRatio: "1/1" },
+        { src: "/images/yoso/09-render-02.jpg", alt: "CGI render — Deep Moisture Cream lid emboss", aspectRatio: "1/1" },
+        { src: "/images/yoso/10-render-03.jpg", alt: "CGI render — Botanical Mask tube", aspectRatio: "1/1" },
       ],
     },
     {
       id: 7,
       layout: "full",
-      images: [{ src: "/images/yoso/11-lifestyle-01.jpg", alt: "YŌSO product on marble shelf in morning light", aspectRatio: "21/9" }],
+      images: [{ src: "/images/yoso/11-lifestyle-01.jpg", alt: "YŌSO products on travertine, strong morning directional light", aspectRatio: "21/9" }],
     },
     {
       id: 8,
       layout: "2col",
       images: [
-        { src: "/images/yoso/12-label-detail.jpg", alt: "Jar label close-up with embossed mark", aspectRatio: "1/1" },
-        { src: "/images/yoso/13-card.jpg", alt: "YŌSO brand card and tissue paper", aspectRatio: "1/1" },
+        { src: "/images/yoso/12-label-detail.jpg", alt: "YŌSO cream jar — embossed mark in raking light", aspectRatio: "1/1" },
+        { src: "/images/yoso/13-card.jpg", alt: "YŌSO brand card on white tissue", aspectRatio: "1/1" },
       ],
     },
     {
       id: 9,
       layout: "full",
-      images: [{ src: "/images/yoso/14-giftbox.jpg", alt: "YŌSO gift packaging set with ribbon", aspectRatio: "16/9" }],
+      images: [{ src: "/images/yoso/14-giftbox.jpg", alt: "YŌSO gift packaging, sage green box, copper foil mark", aspectRatio: "16/9" }],
     },
     {
       id: 10,
       layout: "2col",
       images: [
-        { src: "/images/yoso/15-ecom-01.jpg", alt: "YŌSO e-commerce main product image", aspectRatio: "1/1" },
-        { src: "/images/yoso/16-ecom-02.jpg", alt: "YŌSO texture detail e-commerce image", aspectRatio: "1/1" },
+        { src: "/images/yoso/15-ecom-01.jpg", alt: "YŌSO Botanical Serum — e-commerce main image", aspectRatio: "1/1" },
+        { src: "/images/yoso/16-ecom-02.jpg", alt: "YŌSO serum texture — amber drop mid-fall", aspectRatio: "1/1" },
       ],
     },
     {
       id: 11,
       layout: "full",
-      images: [{ src: "/images/yoso/17-brand-scale.jpg", alt: "YŌSO brand system applied across all SKUs", aspectRatio: "16/9" }],
+      images: [{ src: "/images/yoso/17-brand-scale.jpg", alt: "YŌSO brand system — all touchpoints overhead flat-lay", aspectRatio: "16/9" }],
     },
   ],
   bodyText: [
-    "YŌSO (養素) is a Chinese skincare brand built on the premise that botanical wisdom and clinical precision are not opposites. Founded in 2024, the brand launched with four core products: a facial oil, an essence, a cream and a sheet mask. Each formula is centred on a single hero botanical ingredient, rigorously dosed.",
-    "Lattice Visual was commissioned to build the brand from the ground up: name interpretation, visual identity, packaging design and a full suite of product visualization for digital launch. The central challenge was to differentiate YŌSO in a category saturated with either clinical-white minimalism or over-ornamented heritage aesthetics. The brief called for a third path: quieter, more considered and entirely its own.",
-    "The identity is anchored by a circular mark. A compressed Chinese character sits at its centre: 養, meaning to nurture, drawn to just barely legible so recognition builds slowly rather than arriving all at once. The outer ring carries the Latin name, set in a custom-spaced geometric sans developed to hold equal weight at 8pt on a label and 80pt on a billboard.",
-    "Color was developed from the products themselves. The primary palette, deep ink, mulberry paper and pale celery, was derived from the visual language of traditional Chinese herbalism: ink stone, hand-pressed paper and fresh-cut fennel. A single warm copper accent appears only on embossed finishes and foil elements, used as punctuation rather than decoration.",
-    "Packaging was designed to occupy the still-rare territory between pharmacy restraint and luxury excess. The glass bottle and jar forms are round-shouldered and weighted at the base: stable, generous and unhurried. Labels are single-color offset printed on uncoated stock, with the brand mark embossed on the lid of each jar.",
-    "For the digital launch, Lattice Visual produced a complete set of 3D product renderings: white-background e-commerce shots, atmospheric lifestyle renders set against stone and linen, and a short looping animation showing the serum texture under controlled light. These assets gave YŌSO a complete visual toolkit for its flagship store and social channels before final photography began.",
+    "YŌSO (養素) is a Chinese skincare brand founded on a single premise: that botanical patience and clinical precision are not opposites. Launched in 2024 with four core products — a botanical serum, a deep-moisture cream, a botanical mask, and a cleansing oil — each formula centres on a single hero ingredient, rigorously dosed and sourced from a specific growing region.",
+    "Lattice Visual was engaged to build the brand from the ground up: identity, packaging design, and a complete suite of product visualisation assets for the digital launch. The brief was to carve out a distinct position in a skincare market crowded with either clinical-white minimalism or ornate heritage aesthetics. The challenge was to find a third register — quieter, more considered, and without precedent.",
+    "The identity is anchored by a single mark: a thin circle enclosing a teardrop in outline form. It references the dropper — the precise instrument of botanical dosing — and the drop itself: the concentrated result of patient extraction. The mark scales without compromise from a 10mm jar emboss to a three-metre retail banner, and inverts cleanly between dark and light surfaces.",
+    "Colour was developed from the raw materials of Chinese herbalism rather than from the skincare category itself. The primary palette — deep ink (深墨), parchment (宣), and pale celery (嫩) — draws from ink stone, mulberry paper, and fresh-cut fennel. A single warm copper appears only as embossed and foil-stamped finishes, used as punctuation rather than decoration, marking the handful of moments that earn emphasis.",
+    "Packaging was designed to inhabit the territory between pharmacy restraint and luxury excess. The glass bottle and jar forms are round-shouldered and weighted at the base — stable, generous, unhurried. Labels are single-colour offset-printed on uncoated stock; the brand mark is blind-embossed on each lid. The shipper box, in natural kraft with an ink-stamped mark, extends the same sensibility to the unboxing moment without theatrical excess.",
+    "For the digital launch on YŌSO's flagship and owned social channels, Lattice Visual produced a complete visual toolkit before any location photography was scheduled: white-background e-commerce renders for all four SKUs, atmospheric lifestyle renders on stone and linen surfaces, close-up formula texture shots, and a fifteen-second looping product animation. The resulting asset library gave the brand a consistent, high-quality visual presence from day one.",
   ],
   collaborators: [],
   nextProject: {
-    title: "Nova Skin Lab",
-    slug: "nova-skin-lab",
-    thumbnail: "/images/nova-skin-lab/cover.jpg",
-    visual: "art-nova",
-    tagline: "A refined packaging and product visual system for clinical skincare.",
+    title: "SENKA 鲜 — Campaign Design",
+    slug: "senka-campaign",
+    thumbnail: "/images/senka/cover.jpg",
+    visual: "art-senka",
+    tagline: "Social and e-commerce campaign for a seasonal skincare launch.",
   },
 };
 
@@ -838,7 +853,9 @@ function CaseHeader({ caseStudy }) {
 function CaseHero({ caseStudy }) {
   return (
     <section className="case-hero-video" aria-label={`${caseStudy.title} hero`}>
-      {caseStudy.heroVideo ? (
+      {caseStudy.localVideo ? (
+        <CaseLocalVideo caseStudy={caseStudy} />
+      ) : caseStudy.heroVideo ? (
         <iframe
           title={`${caseStudy.title} hero video`}
           src={`https://player.vimeo.com/video/${caseStudy.heroVideo}?autoplay=1&muted=1&loop=1&background=1`}
@@ -849,6 +866,21 @@ function CaseHero({ caseStudy }) {
         <CaseHeroImage src={caseStudy.heroImage} alt={`${caseStudy.title} hero image`} visual={caseStudy.coverVisual} />
       )}
     </section>
+  );
+}
+
+function CaseLocalVideo({ caseStudy }) {
+  const [failed, setFailed] = useState(false);
+
+  if (failed) {
+    return <CaseHeroImage src={caseStudy.heroImage} alt={`${caseStudy.title} hero image`} visual={caseStudy.coverVisual} />;
+  }
+
+  return (
+    <video key={caseStudy.slug} autoPlay muted loop playsInline poster={caseStudy.heroImage} onError={() => setFailed(true)}>
+      <source src={`${localVideoBase}/${caseStudy.slug}/${caseStudy.localVideo}.webm`} type="video/webm" />
+      <source src={`${localVideoBase}/${caseStudy.slug}/${caseStudy.localVideo}.mp4`} type="video/mp4" />
+    </video>
   );
 }
 
