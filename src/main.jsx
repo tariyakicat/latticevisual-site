@@ -74,6 +74,19 @@ const projects = [
     quote: "The shade is a hypothesis. The shadow is the proof.",
   },
   {
+    slug: "muru",
+    title: "MURU",
+    discipline: "Brand Identity",
+    sector: "Lifestyle",
+    year: "2024",
+    client: "MURU",
+    ratio: "wide",
+    visual: "art-muru",
+    intro:
+      "Brand identity, product imagery and editorial photography for a Helsinki ceramics studio built around tactility, surface and hand-thrown imperfection.",
+    quote: "Objects made by hand accumulate the intention of the maker.",
+  },
+  {
     slug: "nova-skin-lab",
     title: "Nova Skin Lab",
     discipline: "Packaging & Product",
@@ -395,6 +408,112 @@ const atlanCase = {
   },
 };
 
+const muruCase = {
+  slug: "muru",
+  title: "MURU",
+  tagline: "Made with intention.",
+  services: ["Brand Identity", "Editorial Photography", "Product Identity"],
+  client: "MURU",
+  sector: ["Studio Ceramics", "Tableware", "Helsinki"],
+  year: 2024,
+  heroImage: "/images/muru/04-product-bowl-28.jpg",
+  coverImage: "/images/muru/04-product-bowl-28.jpg",
+  coverVisual: "art-muru",
+  pullQuotes: [
+    {
+      id: 1,
+      insertAfterGroup: 0,
+      text:
+        "The glaze breaks at the rim because it should. That is not an error. That is where the object tells you it was made.",
+      attribution: "MURU studio notes, 2023",
+    },
+    {
+      id: 2,
+      insertAfterGroup: 5,
+      text:
+        "The Muru Mark is two circles in conversation. The overlap is not a problem to solve — it is the point.",
+      attribution: "Lattice Visual, brand identity rationale",
+    },
+  ],
+  imageGroups: [
+    {
+      id: 1,
+      layout: "2col",
+      images: [
+        { src: "/images/muru/01-logo-dark.jpg", alt: "MURU mark on iron dark background", aspectRatio: "1/1" },
+        { src: "/images/muru/02-logo-light.jpg", alt: "MURU mark on ash light background", aspectRatio: "1/1" },
+      ],
+    },
+    {
+      id: 2,
+      layout: "full",
+      images: [{ src: "/images/muru/03-palette.jpg", alt: "MURU colour palette", aspectRatio: "16/9" }],
+    },
+    {
+      id: 3,
+      layout: "2col",
+      images: [
+        { src: "/images/muru/04-product-bowl-28.jpg", alt: "MURU BOWL 28 in fog glaze", aspectRatio: "3/4" },
+        { src: "/images/muru/05-product-cup-08.jpg", alt: "MURU CUP 08 with morning steam", aspectRatio: "3/4" },
+      ],
+    },
+    {
+      id: 4,
+      layout: "3col",
+      images: [
+        { src: "/images/muru/06-detail-glaze-break.jpg", alt: "Glaze breaking at rim edge", aspectRatio: "1/1" },
+        { src: "/images/muru/07-detail-throwing-rings.jpg", alt: "Throwing rings on raw stoneware", aspectRatio: "1/1" },
+        { src: "/images/muru/08-detail-clay-foot.jpg", alt: "Unglazed foot ring with Muru Mark", aspectRatio: "1/1" },
+      ],
+    },
+    {
+      id: 5,
+      layout: "2col",
+      images: [
+        { src: "/images/muru/09-detail-iron-speck.jpg", alt: "Iron oxide speckling in glaze", aspectRatio: "1/1" },
+        { src: "/images/muru/13-brand-wrap.jpg", alt: "MURU kraft paper wrapping", aspectRatio: "1/1" },
+      ],
+    },
+    {
+      id: 6,
+      layout: "full",
+      images: [{ src: "/images/muru/10-lifestyle-morning.jpg", alt: "MURU objects on morning table", aspectRatio: "16/9" }],
+    },
+    {
+      id: 7,
+      layout: "2col",
+      images: [
+        { src: "/images/muru/11-lifestyle-vessel.jpg", alt: "MURU VESSEL 15 on winter windowsill", aspectRatio: "16/9" },
+        { src: "/images/muru/12-lifestyle-shelf.jpg", alt: "MURU objects on kitchen shelf", aspectRatio: "16/9" },
+      ],
+    },
+    {
+      id: 8,
+      layout: "2col",
+      images: [
+        { src: "/images/muru/14-brand-tag.jpg", alt: "MURU linen hang tag", aspectRatio: "1/1" },
+        { src: "/images/muru/15-brand-collection.jpg", alt: "MURU full collection on limestone", aspectRatio: "16/9" },
+      ],
+    },
+  ],
+  bodyText: [
+    "MURU came to Lattice Visual with a brief that most product brands avoid stating plainly: their objects could not be understood from a photograph. The weight of a MURU BOWL 28 in both hands — the slight warmth retained from the dishwasher, the small irregularity in the rim where the clay compressed differently — none of this exists on a screen. The studio wanted us to try anyway.",
+    "The logo brief was equally direct. MURU had no mark at all — only a wordmark set in a rounded sans-serif that read as pleasant and forgettable. They needed something that could be pressed into raw clay before a firing, stamped onto kraft paper with a rubber block, and embroidered onto a linen tag with a single needle pass. Three very different surfaces, one mark.",
+    "The Muru Mark is two equal circles overlapping. The distance between their centers is exactly 65% of their shared diameter — enough overlap to create a clear lens-shaped intersection, not so much that either circle loses its independence. What happens in the intersection is nothing: the two outlines simply cross, and the inside of both circles remains empty. Two things touching without merging.",
+    "Photography for MURU was built entirely around surface. The macro studies — glaze pooling at a rim, the throwing rings left by a finger, iron oxide specks fired into a glaze — are not supporting material. They are the primary argument for the brand. A customer who has seen the close-up of the fog glaze breaking at the bowl's rim has understood something about the object that a full product shot cannot convey. They have been shown the evidence of making.",
+    "The lifestyle images follow the same logic: spare, close to the objects, organized around a single source of natural light. The morning table does not try to sell a lifestyle. It shows two MURU objects being used for what they are — a bowl holding food, a cup holding a hot drink — with the kind of stillness that comes from objects that are worth returning to each morning.",
+    "The brand system uses five colors, all of them derived from the material: clay, ash, iron, fog, oxide. The typography is quiet enough to disappear. What remains is the mark — two circles in contact — and the objects themselves.",
+  ],
+  collaborators: [],
+  nextProject: {
+    title: "ATLAN",
+    slug: "atlan",
+    thumbnail: "/images/atlan/04-product-01-washi.jpg",
+    visual: "art-atlan",
+    tagline: "Craft the shadow.",
+  },
+};
+
 const sectorLabels = {
   Beauty: ["Consumer Brands", "Fashion & Beauty"],
   "Food & Drink": ["Hospitality", "Food & Drink"],
@@ -523,6 +642,7 @@ function createCaseStudy(project, index) {
 const caseStudies = projects.map((project, index) => {
   if (project.slug === "yoso") return yosoCase;
   if (project.slug === "atlan") return atlanCase;
+  if (project.slug === "muru") return muruCase;
   return createCaseStudy(project, index);
 });
 

@@ -604,6 +604,46 @@ a {
   border: 1px solid rgba(244, 239, 230, 0.25);
 }
 
+.art-muru {
+  background:
+    radial-gradient(circle at 32% 66%, rgba(196, 168, 130, 0.45), transparent 22%),
+    linear-gradient(135deg, #2c2926 0%, #6b5a4e 100%);
+}
+
+.art-muru::before,
+.art-muru::after {
+  width: 27%;
+  aspect-ratio: 1;
+  top: 36%;
+  border: 1px solid #f0ede8;
+  border-radius: 50%;
+}
+
+.art-muru::before {
+  left: 29%;
+}
+
+.art-muru::after {
+  left: 45%;
+}
+
+.art-muru span:nth-child(1) {
+  width: 58%;
+  height: 38%;
+  left: 21%;
+  bottom: 12%;
+  border-radius: 50%;
+  background: rgba(184, 186, 181, 0.18);
+}
+
+.art-muru span:nth-child(2) {
+  width: 72%;
+  height: 1px;
+  left: 14%;
+  top: 62%;
+  background: rgba(240, 237, 232, 0.36);
+}
+
 .art-nova {
   background: #d9e3df;
 }
