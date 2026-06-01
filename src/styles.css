@@ -564,6 +564,46 @@ a {
   background: #a77b4b;
 }
 
+.art-atlan {
+  background:
+    radial-gradient(circle at 50% 72%, rgba(244, 239, 230, 0.22), transparent 24%),
+    linear-gradient(180deg, #1c1c1a 0%, #0d0d0c 100%);
+}
+
+.art-atlan::before {
+  width: 1px;
+  height: 36%;
+  left: 50%;
+  top: 18%;
+  background: #f4efe6;
+}
+
+.art-atlan::after {
+  width: 20%;
+  aspect-ratio: 1;
+  left: 40%;
+  top: 54%;
+  border-radius: 50%;
+  background: #f4efe6;
+}
+
+.art-atlan span:nth-child(1) {
+  width: 74%;
+  height: 1px;
+  left: 13%;
+  bottom: 20%;
+  background: rgba(184, 149, 106, 0.65);
+}
+
+.art-atlan span:nth-child(2) {
+  width: 26%;
+  height: 26%;
+  right: 11%;
+  top: 14%;
+  border-radius: 50%;
+  border: 1px solid rgba(244, 239, 230, 0.25);
+}
+
 .art-nova {
   background: #d9e3df;
 }
@@ -1162,6 +1202,20 @@ form button:hover {
   font-size: clamp(22px, 2.5vw, 32px);
   font-style: italic;
   line-height: 1.5;
+}
+
+.case-pullquote p {
+  margin: 0;
+}
+
+.case-pullquote cite {
+  display: block;
+  margin-top: 22px;
+  color: #666;
+  font-size: 12px;
+  font-style: normal;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .case-image-group {

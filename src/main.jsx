@@ -44,7 +44,7 @@ const services = [
 ];
 
 const disciplines = ["All", "Brand Identity", "Brand Direction", "Packaging & Product", "Campaign Design", "Ongoing Support"];
-const sectors = ["All", "Beauty", "Food & Drink", "Lifestyle", "Retail", "Wellness"];
+const sectors = ["All", "Beauty", "Food & Drink", "Lifestyle", "Interiors", "Retail", "Wellness"];
 
 const projects = [
   {
@@ -59,6 +59,19 @@ const projects = [
     intro:
       "Brand identity and packaging for a modern Chinese botanical skincare brand built around quiet ritual, precise formulation and a restrained product system.",
     quote: "Precision and patience became the central tension of the identity.",
+  },
+  {
+    slug: "atlan",
+    title: "ATLAN",
+    discipline: "Brand Identity",
+    sector: "Interiors",
+    year: "2024",
+    client: "ATLAN",
+    ratio: "wide",
+    visual: "art-atlan",
+    intro:
+      "Brand identity, product imagery and editorial photography for a Copenhagen lighting studio built around the geometry of light and absence.",
+    quote: "The shade is a hypothesis. The shadow is the proof.",
   },
   {
     slug: "nova-skin-lab",
@@ -277,12 +290,118 @@ const yosoCase = {
   },
 };
 
+const atlanCase = {
+  slug: "atlan",
+  title: "ATLAN",
+  tagline: "Craft the shadow.",
+  services: ["Brand Identity", "Editorial Photography", "Product Visualization"],
+  client: "ATLAN",
+  sector: ["Architectural Lighting", "Home & Interiors", "Copenhagen"],
+  year: 2024,
+  heroImage: "/images/atlan/04-product-01-washi.jpg",
+  coverImage: "/images/atlan/04-product-01-washi.jpg",
+  coverVisual: "art-atlan",
+  pullQuotes: [
+    {
+      id: 1,
+      insertAfterGroup: 0,
+      text: "The shade is a hypothesis. The shadow is the proof.",
+      attribution: "Studio brief, ATLAN 07 CAST",
+    },
+    {
+      id: 2,
+      insertAfterGroup: 5,
+      text:
+        "The Plumb Mark takes two seconds to understand and a lifetime to forget. A line and a circle: the cord, the globe.",
+      attribution: "Lattice Visual, brand identity rationale",
+    },
+  ],
+  imageGroups: [
+    {
+      id: 1,
+      layout: "2col",
+      images: [
+        { src: "/images/atlan/01-logo-dark.jpg", alt: "ATLAN Plumb Mark on charcoal", aspectRatio: "1/1" },
+        { src: "/images/atlan/02-logo-light.jpg", alt: "ATLAN Plumb Mark on bone", aspectRatio: "1/1" },
+      ],
+    },
+    {
+      id: 2,
+      layout: "full",
+      images: [{ src: "/images/atlan/03-palette.jpg", alt: "ATLAN colour palette", aspectRatio: "16/9" }],
+    },
+    {
+      id: 3,
+      layout: "2col",
+      images: [
+        { src: "/images/atlan/04-product-01-washi.jpg", alt: "ATLAN 01 WASHI pendant", aspectRatio: "3/4" },
+        { src: "/images/atlan/05-product-07-cast.jpg", alt: "ATLAN 07 CAST pendant", aspectRatio: "3/4" },
+      ],
+    },
+    {
+      id: 4,
+      layout: "3col",
+      images: [
+        { src: "/images/atlan/06-detail-washi-light.jpg", alt: "Washi paper translucency detail", aspectRatio: "1/1" },
+        { src: "/images/atlan/07-detail-brass-hardware.jpg", alt: "Aged brass fixture ring detail", aspectRatio: "1/1" },
+        { src: "/images/atlan/08-detail-shadow-geometry.jpg", alt: "Shadow geometry on plaster", aspectRatio: "1/1" },
+      ],
+    },
+    {
+      id: 5,
+      layout: "2col",
+      images: [
+        { src: "/images/atlan/09-detail-oak-arm.jpg", alt: "Oak arm joinery detail", aspectRatio: "1/1" },
+        { src: "/images/atlan/13-brand-box.jpg", alt: "ATLAN packaging", aspectRatio: "1/1" },
+      ],
+    },
+    {
+      id: 6,
+      layout: "full",
+      images: [{ src: "/images/atlan/10-lifestyle-dining.jpg", alt: "ATLAN 01 WASHI over dining table", aspectRatio: "16/9" }],
+    },
+    {
+      id: 7,
+      layout: "2col",
+      images: [
+        { src: "/images/atlan/11-lifestyle-studio.jpg", alt: "ATLAN 07 CAST in an architect's studio", aspectRatio: "16/9" },
+        { src: "/images/atlan/12-lifestyle-bedroom.jpg", alt: "ATLAN 04 ARCH in bedroom", aspectRatio: "16/9" },
+      ],
+    },
+    {
+      id: 8,
+      layout: "2col",
+      images: [
+        { src: "/images/atlan/14-brand-card.jpg", alt: "ATLAN specification card", aspectRatio: "1/1" },
+        { src: "/images/atlan/15-brand-collection.jpg", alt: "ATLAN full collection", aspectRatio: "16/9" },
+      ],
+    },
+  ],
+  bodyText: [
+    "ATLAN came to Lattice Visual with a problem familiar to design-led hardware brands: the product spoke fluently in person and fell completely silent on screen. Their studio, a converted warehouse in Copenhagen's Refshaleøen district, produced four pendant lights that interior architects had waited months to get hold of. The website showed grey squares.",
+    "The first decision was about the logo. ATLAN had been operating with a wordmark — the brand name set in a geometric sans-serif — which read clearly enough on paper but gave no visual anchor when a product photograph needed to carry branding. We needed a mark small enough to engrave into a 28mm brass ring, reproducible enough to blind-deboss into matte cardstock, and distinctive enough to read at scale on a trade fair banner. The Plumb Mark emerged from a single sketch session: the pendant reduced to its two irreducible components.",
+    "The line is the cord. The circle is the globe. Together they describe every pendant light that has ever existed — from a bare Edison bulb in a warehouse loft to an ATLAN 01 WASHI at the center of a Michelin-starred dining room. The mark holds that full range without explanation. It carries the weight of the whole catalog in two strokes.",
+    "Photography presented an unusual brief: the subject of every image is not the fixture but the light it produces. We built all fifteen images around this premise. The macro studies show washi paper backlit to near-transparency, brass oxidization catching raking light, an oak joint that you want to touch through the screen. The product heroes place each fixture alone against deep charcoal and let the glow do the work. The lifestyle shots are almost entirely dark — the fixture and its shadow pool define the space.",
+    "The shadow is in every image. This was deliberate. ATLAN's studio brief for the 07 CAST read: \"The shade is a hypothesis. The shadow is the proof.\" The circular pool of warm light that the 07 CAST projects onto any surface below it is the product's essential feature — not the aluminum dome, which you see in the shop, but the perfect geometry it produces at 11pm on a concrete floor.",
+    "The brand system uses two colors, two typefaces, and one mark. This is not minimalism as aesthetic choice; it is minimalism as faith in the product. When the product is strong enough, the identity does not compete with it.",
+  ],
+  collaborators: [],
+  nextProject: {
+    title: "YŌSO 養素",
+    slug: "yoso",
+    thumbnail: "/images/yoso/07-packaging-set.jpg",
+    visual: "art-yoso",
+    tagline: "Brand identity and packaging for a modern Chinese botanical skincare brand.",
+  },
+};
+
 const sectorLabels = {
   Beauty: ["Consumer Brands", "Fashion & Beauty"],
   "Food & Drink": ["Hospitality", "Food & Drink"],
   Lifestyle: ["Consumer Brands", "Lifestyle"],
   Retail: ["Retail", "Consumer Goods"],
   Wellness: ["Health", "Wellness"],
+  Interiors: ["Architectural Lighting", "Home & Interiors"],
 };
 
 const serviceLabels = {
@@ -401,7 +520,11 @@ function createCaseStudy(project, index) {
   };
 }
 
-const caseStudies = projects.map((project, index) => (project.slug === "yoso" ? yosoCase : createCaseStudy(project, index)));
+const caseStudies = projects.map((project, index) => {
+  if (project.slug === "yoso") return yosoCase;
+  if (project.slug === "atlan") return atlanCase;
+  return createCaseStudy(project, index);
+});
 
 const newsPosts = [
   {
@@ -906,7 +1029,7 @@ function CaseBody({ caseStudy }) {
           {caseStudy.pullQuotes
             .filter((quote) => quote.insertAfterGroup === group.id - 1)
             .map((quote) => (
-              <PullQuote key={quote.id} text={quote.text} />
+              <PullQuote key={quote.id} quote={quote} />
             ))}
           <CaseImageGroup group={group} />
         </React.Fragment>
@@ -915,7 +1038,7 @@ function CaseBody({ caseStudy }) {
   );
 }
 
-function PullQuote({ text }) {
+function PullQuote({ quote }) {
   return (
     <motion.blockquote
       className="case-pullquote"
@@ -924,7 +1047,8 @@ function PullQuote({ text }) {
       viewport={viewportOnce}
       transition={{ duration: 0.7, ease: easeOut }}
     >
-      {text}
+      <p>{quote.text}</p>
+      {quote.attribution && <cite>{quote.attribution}</cite>}
     </motion.blockquote>
   );
 }
