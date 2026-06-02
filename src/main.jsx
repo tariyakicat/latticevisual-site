@@ -61,6 +61,19 @@ const projects = [
     quote: "Precision and patience became the central tension of the identity.",
   },
   {
+    slug: "folk-solstice",
+    title: "FOLK × SOLSTICE",
+    discipline: "Packaging & Product",
+    sector: "Food & Drink",
+    year: "2025",
+    client: "FOLK",
+    ratio: "wide",
+    visual: "art-folk-solstice",
+    intro:
+      "A complete launch visual suite for a limited-edition botanical sparkling water collection, spanning e-commerce, packaging, campaign and social assets.",
+    quote: "Every image had a platform, a crop and a job to do.",
+  },
+  {
     slug: "atlan",
     title: "ATLAN",
     discipline: "Brand Identity",
@@ -313,6 +326,92 @@ const yosoCase = {
     thumbnail: "/images/senka/cover.jpg",
     visual: "art-senka",
     tagline: "Social and e-commerce campaign for a seasonal skincare launch.",
+  },
+};
+
+const folkSolsticeCase = {
+  slug: "folk-solstice",
+  title: "FOLK × SOLSTICE",
+  tagline: "Botanically brewed. Seasonally limited.",
+  serviceType: "packaging",
+  services: ["Packaging & Product Visuals", "E-commerce Assets", "Launch Visuals"],
+  client: "FOLK",
+  sector: ["Food & Drink", "Premium Beverage", "Brooklyn"],
+  year: 2025,
+  heroImage: "/images/folk-solstice/C4-life-kv.jpg",
+  coverImage: "/images/folk-solstice/C4-life-kv.jpg",
+  coverVisual: "art-folk-solstice",
+  subheadline:
+    "Complete launch visual suite for FOLK's summer 2025 limited edition — 15 assets across e-commerce, packaging, lifestyle, social, and gifting.",
+  launchCopy: {
+    hero: "SOLSTICE. Botanically brewed. 12 weeks only.",
+    listing: "FOLK SOLSTICE 02 — White Peach & Ginger Sparkling Water · 330ml",
+    gift: "The SOLSTICE gift set. All four summer botanicals. A twelve-week season in a box.",
+  },
+  deliverables: [
+    {
+      category: "E-commerce",
+      description: "Amazon-compliant white-background shots for listings and product pages.",
+      count: 4,
+      images: [
+        { src: "/images/folk-solstice/A1-ec-hero-02.jpg", alt: "SOLSTICE 02 Amazon main image", aspect: "square", platform: "Amazon main image" },
+        { src: "/images/folk-solstice/A2-ec-lineup.jpg", alt: "All four SOLSTICE flavors lineup", aspect: "wide", platform: "Amazon / Shopify" },
+        { src: "/images/folk-solstice/A3-ec-pour-white.jpg", alt: "SOLSTICE 02 poured over ice on white", aspect: "square", platform: "Shopify secondary" },
+        { src: "/images/folk-solstice/A4-ec-label-detail.jpg", alt: "SOLSTICE 02 label botanical illustration detail", aspect: "square", platform: "Amazon alt image" },
+      ],
+    },
+    {
+      category: "Packaging renders",
+      description: "Dark studio and editorial renders for press decks, wholesale, and DTC packaging pages.",
+      count: 4,
+      images: [
+        { src: "/images/folk-solstice/B1-pkg-hero-dark.jpg", alt: "SOLSTICE 02 dark studio hero", aspect: "portrait", platform: "PR kit / brand deck" },
+        { src: "/images/folk-solstice/B2-pkg-collection.jpg", alt: "Full SOLSTICE collection on slate", aspect: "wide", platform: "Wholesale catalog" },
+        { src: "/images/folk-solstice/B3-pkg-giftbox.jpg", alt: "SOLSTICE gift set box interior", aspect: "square", platform: "DTC gift page" },
+        { src: "/images/folk-solstice/B4-pkg-label-art.jpg", alt: "All four label artworks as flat prints", aspect: "wide", platform: "Brand deck" },
+      ],
+    },
+    {
+      category: "Lifestyle & campaign",
+      description: "Natural seasonal images for the homepage, PR story, ingredient narrative, and key visual.",
+      count: 4,
+      images: [
+        { src: "/images/folk-solstice/C1-life-table.jpg", alt: "Summer table with FOLK SOLSTICE ice bucket", aspect: "wide", platform: "Website hero" },
+        { src: "/images/folk-solstice/C2-life-pour.jpg", alt: "SOLSTICE 02 pour action in backlight", aspect: "square", platform: "Editorial / PR" },
+        { src: "/images/folk-solstice/C3-life-ingredients.jpg", alt: "SOLSTICE bottles with botanical ingredients", aspect: "wide", platform: "Ingredient story" },
+        { src: "/images/folk-solstice/C4-life-kv.jpg", alt: "Campaign key visual with four bottles in summer garden", aspect: "portrait", platform: "Campaign hub / OOH" },
+      ],
+    },
+    {
+      category: "Social & launch",
+      description: "Pre-cropped launch assets for Instagram Story and Feed placements.",
+      count: 2,
+      images: [
+        { src: "/images/folk-solstice/D1-social-story.jpg", alt: "SOLSTICE 02 Instagram Story format", aspect: "portrait", platform: "Instagram Story" },
+        { src: "/images/folk-solstice/D2-social-feed.jpg", alt: "SOLSTICE launch Instagram feed post", aspect: "square", platform: "Instagram Feed" },
+      ],
+    },
+    {
+      category: "Retail & gift",
+      description: "Gift set reveal for the direct-to-consumer gifting program.",
+      count: 1,
+      images: [
+        { src: "/images/folk-solstice/E1-gift-unbox.jpg", alt: "SOLSTICE gift set overhead reveal", aspect: "square", platform: "DTC gift page" },
+      ],
+    },
+  ],
+  stats: {
+    totalAssets: 15,
+    sku: 4,
+    formats: ["1:1", "16:9", "9:16", "4:5"],
+    platforms: ["Amazon", "Shopify", "Instagram", "PR"],
+  },
+  nextProject: {
+    title: "YŌSO 養素",
+    slug: "yoso",
+    thumbnail: "/images/yoso/07-packaging-set.jpg",
+    visual: "art-yoso",
+    tagline: "Brand identity and packaging for a modern Chinese botanical skincare brand.",
   },
 };
 
@@ -760,6 +859,7 @@ function createCaseStudy(project, index) {
 
 const caseStudies = projects.map((project, index) => {
   if (project.slug === "yoso") return yosoCase;
+  if (project.slug === "folk-solstice") return folkSolsticeCase;
   if (project.slug === "atlan") return atlanCase;
   if (project.slug === "muru") return muruCase;
   if (project.slug === "brume") return brumeCase;
@@ -1183,6 +1283,10 @@ function FormSelect({ label, name, options }) {
 function CaseStudyPage({ slug, onNavigate }) {
   const caseStudy = caseStudies.find((item) => item.slug === slug) || yosoCase;
 
+  if (caseStudy.serviceType === "packaging") {
+    return <PackagingSuitePage caseStudy={caseStudy} onNavigate={onNavigate} />;
+  }
+
   return (
     <article className="case-study">
       <CaseHeader caseStudy={caseStudy} />
@@ -1192,6 +1296,114 @@ function CaseStudyPage({ slug, onNavigate }) {
       <CaseMetadata caseStudy={caseStudy} />
       <NextProject nextProject={caseStudy.nextProject} onNavigate={onNavigate} />
     </article>
+  );
+}
+
+function PackagingSuitePage({ caseStudy, onNavigate }) {
+  return (
+    <article className="case-study packaging-suite">
+      <CaseHeader caseStudy={caseStudy} />
+      <CaseHero caseStudy={caseStudy} />
+      <PackagingSuiteIntro caseStudy={caseStudy} />
+      <PackagingDeliverables deliverables={caseStudy.deliverables} />
+      <PackagingStats stats={caseStudy.stats} />
+      <NextProject nextProject={caseStudy.nextProject} onNavigate={onNavigate} />
+    </article>
+  );
+}
+
+function PackagingSuiteIntro({ caseStudy }) {
+  return (
+    <section className="packaging-intro">
+      <p>{caseStudy.subheadline}</p>
+      <div className="launch-copy-grid">
+        <article>
+          <span>Key Visual</span>
+          <strong>{caseStudy.launchCopy.hero}</strong>
+        </article>
+        <article>
+          <span>E-commerce</span>
+          <strong>{caseStudy.launchCopy.listing}</strong>
+        </article>
+        <article>
+          <span>Gift Set</span>
+          <strong>{caseStudy.launchCopy.gift}</strong>
+        </article>
+      </div>
+    </section>
+  );
+}
+
+function PackagingDeliverables({ deliverables }) {
+  return (
+    <section className="deliverable-suite">
+      {deliverables.map((group) => (
+        <motion.article
+          className="deliverable-group"
+          key={group.category}
+          initial={{ opacity: 0, y: 22 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={viewportOnce}
+          transition={{ duration: 0.6, ease: easeOut }}
+        >
+          <header>
+            <div>
+              <span>{String(group.count).padStart(2, "0")} assets</span>
+              <h2>{group.category}</h2>
+            </div>
+            <p>{group.description}</p>
+          </header>
+          <div className="deliverable-grid">
+            {group.images.map((image) => (
+              <PackagingImage image={image} key={image.src} />
+            ))}
+          </div>
+        </motion.article>
+      ))}
+    </section>
+  );
+}
+
+function PackagingImage({ image }) {
+  const [failed, setFailed] = useState(!image.src);
+
+  return (
+    <figure className={`deliverable-image aspect-${image.aspect}`}>
+      {failed ? (
+        <div className="case-image-placeholder" aria-label={image.alt}>
+          <span />
+          <span />
+          <span />
+          <span />
+        </div>
+      ) : (
+        <img src={image.src} alt={image.alt} loading="lazy" onError={() => setFailed(true)} />
+      )}
+      <figcaption>
+        <span>{image.platform}</span>
+        {image.alt}
+      </figcaption>
+    </figure>
+  );
+}
+
+function PackagingStats({ stats }) {
+  const items = [
+    { label: "Total Assets", value: stats.totalAssets },
+    { label: "SKUs", value: stats.sku },
+    { label: "Formats", value: stats.formats.join(" · ") },
+    { label: "Platforms", value: stats.platforms.join(" · ") },
+  ];
+
+  return (
+    <section className="packaging-stats">
+      {items.map((item) => (
+        <article key={item.label}>
+          <span>{item.label}</span>
+          <strong>{item.value}</strong>
+        </article>
+      ))}
+    </section>
   );
 }
 
