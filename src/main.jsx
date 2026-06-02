@@ -169,13 +169,13 @@ const projects = [
     title: "Kiko Home",
     discipline: "Campaign Design",
     sector: "Retail",
-    year: "2026",
+    year: "2025",
     client: "Kiko Home",
     ratio: "ultra",
     visual: "art-kiko",
     intro:
-      "A campaign direction for a homeware launch, spanning website banners, social templates and event graphics.",
-    quote: "The campaign language had to be simple enough to repeat and strong enough to own.",
+      "A campaign and communication design system for a home goods retail launch, built around repeatable grid logic, restrained colour and the Slot Mark.",
+    quote: "The challenge was not to add more decoration, but to make every repeated element work harder.",
   },
   {
     slug: "foundry-market",
@@ -869,6 +869,120 @@ const brumeCase = {
   },
 };
 
+const kikoHomeCase = {
+  slug: "kiko-home",
+  title: "Kiko Home",
+  tagline: "Made for the home you're building.",
+  serviceType: "campaign",
+  services: ["Campaign & Communication Design", "Retail Communication", "Social Templates"],
+  client: "Kiko Home",
+  sector: ["Home Goods Retail", "Communication Design", "Retail"],
+  year: 2025,
+  heroImage: "/images/kiko-home/F1_storefront_exterior.png",
+  coverImage: "/images/kiko-home/F1_storefront_exterior.png",
+  coverVisual: "art-kiko",
+  subheadline: "Campaign and communication design system for launch, spanning visual direction, retail touchpoints, product communication, social templates, and environmental applications.",
+  launchHighlights: [
+    {
+      label: "System",
+      value: "The Slot Mark, geometric type, and a three-colour palette built for repetition without noise.",
+    },
+    {
+      label: "Launch",
+      value: "A complete family of campaign posters, digital key visuals, store vinyl, and outdoor placements.",
+    },
+    {
+      label: "Rollout",
+      value: "Retail, e-commerce, Instagram, OOH, and print formats sharing the same margin and zone logic.",
+    },
+  ],
+  deliverables: [
+    {
+      category: "Visual System Display",
+      description: "Guideline-style assets documenting the Slot Mark, colour system, typography, and layout anatomy.",
+      count: 3,
+      images: [
+        { src: "/images/kiko-home/A1_slot_mark_three_grounds.png", alt: "Kiko Home Slot Mark on Ink, Paper, and Clay grounds", aspect: "square", platform: "Brand guidelines" },
+        { src: "/images/kiko-home/A2_colour_type_specimen.png", alt: "Kiko Home colour and type specimen sheet", aspect: "wide", platform: "Case study documentation" },
+        { src: "/images/kiko-home/A3_grid_anatomy_diagram.png", alt: "Kiko Home layout grid anatomy diagrams", aspect: "wide", platform: "Brand guidelines" },
+      ],
+    },
+    {
+      category: "Campaign & Launch Formats",
+      description: "Launch-facing formats for retail interiors, storefront activation, digital key visuals, and outdoor media.",
+      count: 4,
+      images: [
+        { src: "/images/kiko-home/B1_campaign_launch_poster.png", alt: "Kiko Home campaign launch poster on Ink ground", aspect: "portrait", platform: "Retail / Print advertising" },
+        { src: "/images/kiko-home/B2_store_window_vinyl.png", alt: "Kiko Home store window vinyl graphic", aspect: "portrait", platform: "Retail exterior" },
+        { src: "/images/kiko-home/B3_horizontal_key_visual.png", alt: "Kiko Home horizontal digital key visual", aspect: "wide", platform: "Website / Email / Social ad" },
+        { src: "/images/kiko-home/B4_ooh_transit_format.png", alt: "Kiko Home transit shelter advertising panel", aspect: "wide", platform: "OOH / Outdoor" },
+      ],
+    },
+    {
+      category: "Retail Communication",
+      description: "In-store physical communication pieces designed to carry the same mark, type, and colour behaviour at different scales.",
+      count: 3,
+      images: [
+        { src: "/images/kiko-home/C1_shopping_bag.png", alt: "Kiko Home branded Ink paper shopping bag", aspect: "portrait", platform: "Retail in-store" },
+        { src: "/images/kiko-home/C2_hang_tag_family.png", alt: "Kiko Home hang tag and price tag family", aspect: "square", platform: "Product tags" },
+        { src: "/images/kiko-home/C3_aframe_pos_signage.png", alt: "Kiko Home A-frame POS signage in retail interior", aspect: "portrait", platform: "Point of sale" },
+      ],
+    },
+    {
+      category: "Product Communication",
+      description: "Reusable communication frames for product pages, folded insert cards, and lookbook spreads.",
+      count: 3,
+      images: [
+        { src: "/images/kiko-home/D1_ecommerce_composition_template.png", alt: "Kiko Home e-commerce composition template", aspect: "wide", platform: "Shopify / Website" },
+        { src: "/images/kiko-home/D2_product_card_folded.png", alt: "Kiko Home folded product card closed and open", aspect: "wide", platform: "Product insert / Gift card" },
+        { src: "/images/kiko-home/D3_lookbook_spread.png", alt: "Kiko Home open lookbook spread", aspect: "wide", platform: "Print lookbook / PDF" },
+      ],
+    },
+    {
+      category: "Social Templates",
+      description: "Reusable Instagram feed, story, and grid systems designed around fixed image and type zones.",
+      count: 3,
+      images: [
+        { src: "/images/kiko-home/E1_instagram_feed_template.png", alt: "Kiko Home Instagram Feed post template", aspect: "square", platform: "Instagram Feed" },
+        { src: "/images/kiko-home/E2_instagram_story_template.png", alt: "Kiko Home Instagram Story template on phone screen", aspect: "portrait", platform: "Instagram Story / Reel cover" },
+        { src: "/images/kiko-home/E3_instagram_grid_preview.png", alt: "Kiko Home six-post Instagram grid preview", aspect: "square", platform: "Social planning" },
+      ],
+    },
+    {
+      category: "Environmental In Situ",
+      description: "Storefront and interior views showing the campaign system deployed as a retail environment, not only a set of flat assets.",
+      count: 2,
+      images: [
+        { src: "/images/kiko-home/F1_storefront_exterior.png", alt: "Kiko Home storefront exterior with window graphics and fascia sign", aspect: "wide", platform: "Case study / Press" },
+        { src: "/images/kiko-home/F2_retail_interior_brand_family.png", alt: "Kiko Home retail interior with full brand material family", aspect: "wide", platform: "Brand presentation / Press" },
+      ],
+    },
+  ],
+  stats: {
+    totalAssets: 18,
+    categories: 6,
+    formats: ["1:1", "2:3", "3:2", "9:16"],
+    platforms: ["Retail", "E-commerce", "Instagram", "OOH", "Print"],
+  },
+  pullQuotes: [
+    "The challenge was not to add more decoration, but to make every repeated element work harder: mark, type, color, image crop and layout rhythm.",
+    "Applications were designed as a family. Each format has enough independence to feel intentional, while still returning to the same core behaviour.",
+  ],
+  bodyText: [
+    "Kiko Home is a retail brand in a market where visual memory is built quickly and lost just as quickly. The identity had to feel confident enough for launch and restrained enough to grow. The brief was not about scale — it was about repeatability.",
+    "The identity work began with proportion. The Slot Mark was treated as an anchor rather than a badge: a geometric solid with a single through-void, designed to sit quietly on product tags and expand with authority across a full-height store window. The mark never decorates — it occupies.",
+    "Colour was developed from the brand's own materials and audience cues. Ink, Paper and Clay: three colours with enough contrast to carry any format without relying on a single fashionable shade. The palette makes room for photography without competing with it.",
+    "For rollout, the assets were prepared as a working toolkit rather than a static presentation. Every template is grid-faithful. Every format shares the same margin logic, the same zone behaviour, the same mark placement conventions. The result is a system that a team can operate, not just a deck that an agency presents.",
+  ],
+  nextProject: {
+    title: "Foundry Market",
+    slug: "foundry-market",
+    thumbnail: "",
+    visual: "art-foundry",
+    tagline: "Brand story, positioning and art direction for an independent retail concept.",
+  },
+};
+
 const sectorLabels = {
   Beauty: ["Consumer Brands", "Fashion & Beauty"],
   "Food & Drink": ["Hospitality", "Food & Drink"],
@@ -1001,6 +1115,7 @@ const caseStudies = projects.map((project, index) => {
   if (project.slug === "atlan") return atlanCase;
   if (project.slug === "muru") return muruCase;
   if (project.slug === "brume") return brumeCase;
+  if (project.slug === "kiko-home") return kikoHomeCase;
   return createCaseStudy(project, index);
 });
 
@@ -1425,6 +1540,10 @@ function CaseStudyPage({ slug, onNavigate }) {
     return <PackagingSuitePage caseStudy={caseStudy} onNavigate={onNavigate} />;
   }
 
+  if (caseStudy.serviceType === "campaign") {
+    return <CampaignSuitePage caseStudy={caseStudy} onNavigate={onNavigate} />;
+  }
+
   return (
     <article className="case-study">
       <CaseHeader caseStudy={caseStudy} />
@@ -1432,6 +1551,20 @@ function CaseStudyPage({ slug, onNavigate }) {
       <CaseBody caseStudy={caseStudy} />
       <CaseText bodyText={caseStudy.bodyText} />
       <CaseMetadata caseStudy={caseStudy} />
+      <NextProject nextProject={caseStudy.nextProject} onNavigate={onNavigate} />
+    </article>
+  );
+}
+
+function CampaignSuitePage({ caseStudy, onNavigate }) {
+  return (
+    <article className="case-study packaging-suite campaign-suite">
+      <CaseHeader caseStudy={caseStudy} />
+      <CaseHero caseStudy={caseStudy} />
+      <PackagingSuiteIntro caseStudy={caseStudy} />
+      <PackagingDeliverables deliverables={caseStudy.deliverables} />
+      {caseStudy.bodyText ? <PackagingNarrative caseStudy={caseStudy} /> : null}
+      <PackagingStats stats={caseStudy.stats} />
       <NextProject nextProject={caseStudy.nextProject} onNavigate={onNavigate} />
     </article>
   );
@@ -1452,22 +1585,24 @@ function PackagingSuitePage({ caseStudy, onNavigate }) {
 }
 
 function PackagingSuiteIntro({ caseStudy }) {
+  const highlights =
+    caseStudy.launchHighlights ||
+    [
+      { label: "Key Visual", value: caseStudy.launchCopy.hero },
+      { label: "E-commerce", value: caseStudy.launchCopy.listing },
+      { label: "Gift Set", value: caseStudy.launchCopy.gift },
+    ];
+
   return (
     <section className="packaging-intro">
       <p>{caseStudy.subheadline}</p>
       <div className="launch-copy-grid">
-        <article>
-          <span>Key Visual</span>
-          <strong>{caseStudy.launchCopy.hero}</strong>
-        </article>
-        <article>
-          <span>E-commerce</span>
-          <strong>{caseStudy.launchCopy.listing}</strong>
-        </article>
-        <article>
-          <span>Gift Set</span>
-          <strong>{caseStudy.launchCopy.gift}</strong>
-        </article>
+        {highlights.map((item) => (
+          <article key={item.label}>
+            <span>{item.label}</span>
+            <strong>{item.value}</strong>
+          </article>
+        ))}
       </div>
     </section>
   );
@@ -1548,10 +1683,11 @@ function PackagingNarrative({ caseStudy }) {
 function PackagingStats({ stats }) {
   const items = [
     { label: "Total Assets", value: stats.totalAssets },
-    { label: "SKUs", value: stats.sku },
+    stats.sku ? { label: "SKUs", value: stats.sku } : null,
+    stats.categories ? { label: "Categories", value: stats.categories } : null,
     { label: "Formats", value: stats.formats.join(" · ") },
     { label: "Platforms", value: stats.platforms.join(" · ") },
-  ];
+  ].filter(Boolean);
 
   return (
     <section className="packaging-stats">

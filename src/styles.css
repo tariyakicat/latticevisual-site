@@ -897,31 +897,49 @@ a {
 }
 
 .art-kiko {
-  background: #0c2a26;
+  background:
+    linear-gradient(90deg, rgba(28, 25, 23, 0.08) 0 1px, transparent 1px 18%),
+    linear-gradient(135deg, #f5f0e8 0%, #ded6ca 100%);
 }
 
 .art-kiko::before {
-  width: 34%;
-  height: 56%;
-  left: 19%;
-  top: 23%;
-  background: #c8ff00;
+  width: 33%;
+  aspect-ratio: 1;
+  left: 16%;
+  top: 24%;
+  background: #1c1917;
 }
 
 .art-kiko::after {
-  width: 31%;
-  height: 56%;
-  right: 17%;
-  top: 23%;
-  background: #f2efe5;
+  width: 20%;
+  height: 3%;
+  left: 22.5%;
+  top: 31.4%;
+  background: #f5f0e8;
 }
 
 .art-kiko span:nth-child(1) {
-  width: 60%;
+  width: 42%;
   height: 1px;
-  left: 20%;
+  right: 15%;
+  top: 42%;
+  background: #c4622d;
+}
+
+.art-kiko span:nth-child(2) {
+  width: 28%;
+  height: 20%;
+  right: 15%;
   top: 50%;
-  background: #080808;
+  background: rgba(28, 25, 23, 0.88);
+}
+
+.art-kiko span:nth-child(3) {
+  width: 34%;
+  height: 1px;
+  right: 15%;
+  bottom: 23%;
+  background: rgba(28, 25, 23, 0.72);
 }
 
 .art-foundry {
