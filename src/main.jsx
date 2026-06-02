@@ -87,6 +87,19 @@ const projects = [
     quote: "Objects made by hand accumulate the intention of the maker.",
   },
   {
+    slug: "brume",
+    title: "BRUME",
+    discipline: "Brand Identity",
+    sector: "Beauty",
+    year: "2024",
+    client: "BRUME",
+    ratio: "wide",
+    visual: "art-brume",
+    intro:
+      "Brand identity, packaging imagery and editorial photography for a Grasse perfume house built around scent, absence and controlled darkness.",
+    quote: "The scent of the invisible.",
+  },
+  {
     slug: "nova-skin-lab",
     title: "Nova Skin Lab",
     discipline: "Packaging & Product",
@@ -514,6 +527,112 @@ const muruCase = {
   },
 };
 
+const brumeCase = {
+  slug: "brume",
+  title: "BRUME",
+  tagline: "The scent of the invisible.",
+  services: ["Brand Identity", "Editorial Photography", "Packaging Identity"],
+  client: "BRUME",
+  sector: ["Niche Perfumery", "Luxury Goods", "Grasse"],
+  year: 2024,
+  heroImage: "/images/brume/04-product-bottle-01.jpg",
+  coverImage: "/images/brume/04-product-bottle-01.jpg",
+  coverVisual: "art-brume",
+  pullQuotes: [
+    {
+      id: 1,
+      insertAfterGroup: 0,
+      text:
+        "We are not selling a smell. We are selling the specific way air felt in a specific place.",
+      attribution: "BRUME founder brief, 2023",
+    },
+    {
+      id: 2,
+      insertAfterGroup: 5,
+      text:
+        "The Void Mark is a diamond with a hole through it. The hole is the point.",
+      attribution: "Lattice Visual, brand identity rationale",
+    },
+  ],
+  imageGroups: [
+    {
+      id: 1,
+      layout: "2col",
+      images: [
+        { src: "/images/brume/01-logo-dark.jpg", alt: "BRUME Void Mark on fumee dark background", aspectRatio: "1/1" },
+        { src: "/images/brume/02-logo-light.jpg", alt: "BRUME Void Mark on ivoire background", aspectRatio: "1/1" },
+      ],
+    },
+    {
+      id: 2,
+      layout: "full",
+      images: [{ src: "/images/brume/03-palette.jpg", alt: "BRUME colour palette", aspectRatio: "16/9" }],
+    },
+    {
+      id: 3,
+      layout: "2col",
+      images: [
+        { src: "/images/brume/04-product-bottle-01.jpg", alt: "BRUME 01 PLUIE bottle", aspectRatio: "3/4" },
+        { src: "/images/brume/05-product-group.jpg", alt: "All four BRUME fragrances", aspectRatio: "16/9" },
+      ],
+    },
+    {
+      id: 4,
+      layout: "3col",
+      images: [
+        { src: "/images/brume/06-detail-bottle-glass.jpg", alt: "Matte black glass refraction at corner", aspectRatio: "1/1" },
+        { src: "/images/brume/07-detail-brass-cap.jpg", alt: "Machined brass cap close-up", aspectRatio: "1/1" },
+        { src: "/images/brume/08-detail-kraft-label.jpg", alt: "Void Mark blind-debossed on kraft", aspectRatio: "1/1" },
+      ],
+    },
+    {
+      id: 5,
+      layout: "2col",
+      images: [
+        { src: "/images/brume/09-detail-ingredient.jpg", alt: "Vetiver roots and grey amber resin", aspectRatio: "1/1" },
+        { src: "/images/brume/13-brand-box.jpg", alt: "BRUME black rigid box interior", aspectRatio: "1/1" },
+      ],
+    },
+    {
+      id: 6,
+      layout: "full",
+      images: [{ src: "/images/brume/10-lifestyle-vanity.jpg", alt: "BRUME bottle on marble shelf in morning light", aspectRatio: "16/9" }],
+    },
+    {
+      id: 7,
+      layout: "2col",
+      images: [
+        { src: "/images/brume/11-lifestyle-fog.jpg", alt: "BRUME bottle on coastal rock in morning fog", aspectRatio: "16/9" },
+        { src: "/images/brume/12-lifestyle-interior.jpg", alt: "BRUME bottle by candlelight at a dark desk", aspectRatio: "16/9" },
+      ],
+    },
+    {
+      id: 8,
+      layout: "2col",
+      images: [
+        { src: "/images/brume/14-brand-card.jpg", alt: "BRUME formula card with Void Mark", aspectRatio: "1/1" },
+        { src: "/images/brume/15-brand-collection.jpg", alt: "All four BRUME bottles in perspective line", aspectRatio: "16/9" },
+      ],
+    },
+  ],
+  bodyText: [
+    "BRUME came to Lattice Visual with a problem that is not a problem most brands would admit to having: the product is invisible. A perfume house cannot photograph what it sells. It can photograph the bottle, the box, the materials, the landscape where the raw ingredients grow — but the thing itself, the scent, exists only in air and in memory. The studio wanted their visual identity to acknowledge this directly, rather than perform the aspirational imagery the category usually demands.",
+    "The Void Mark emerged from exactly this admission. The brief for the logo was one sentence: show the absence. The resulting mark is a solid diamond — bold, heavy, monumental — with a perfect circle removed from its center. The diamond is mass. The circle is nothing. Together they describe the brand's central fact: there is something here, and at the center of it there is something you cannot see.",
+    "The mark breaks from every convention of the niche fragrance category, where logos are typically either calligraphic wordmarks or fine-line emblems suggesting old-world herbaria. The Void Mark is geometric, industrial in its precision, closer to a Bauhaus exercise than a fragrance bottle. This is deliberate. BRUME's fragrances are not romantic. They are precise atmospheric descriptions, numbered not named, formulated with the same discipline a chemist brings to a composition.",
+    "Photography followed the same logic of controlled restraint. All fifteen images are single-source lit — a window, a candle, a controlled studio spot. No fill, no bounce, no softening. The shadows are part of the image, not accidents to be corrected. The bottle's matte black surface absorbs rather than reflects light, which means the image is largely composed of what the light misses — the dark mass of the object, and one or two surfaces where the source lands.",
+    "The fog landscape image was the most contested in the review process. The studio's instinct was to avoid cliched product-in-nature photography. The argument for it: BRUME 01 PLUIE exists as an attempt to recreate the specific quality of air that precedes rain on coastal stone. A photograph of the bottle in actual coastal fog is not an advertisement — it is a proof of origin. The fog is the source material. The bottle contains a version of it.",
+    "The brand system is two colors and one mark. No pattern. No secondary graphic language. No supporting illustration. The identity earns its confidence by what it removes — which is, in the end, the only logic available to a house that makes things you cannot see.",
+  ],
+  collaborators: [],
+  nextProject: {
+    title: "MURU",
+    slug: "muru",
+    thumbnail: "/images/muru/04-product-bowl-28.jpg",
+    visual: "art-muru",
+    tagline: "Made with intention.",
+  },
+};
+
 const sectorLabels = {
   Beauty: ["Consumer Brands", "Fashion & Beauty"],
   "Food & Drink": ["Hospitality", "Food & Drink"],
@@ -643,6 +762,7 @@ const caseStudies = projects.map((project, index) => {
   if (project.slug === "yoso") return yosoCase;
   if (project.slug === "atlan") return atlanCase;
   if (project.slug === "muru") return muruCase;
+  if (project.slug === "brume") return brumeCase;
   return createCaseStudy(project, index);
 });
 
