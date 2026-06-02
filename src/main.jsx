@@ -74,6 +74,19 @@ const projects = [
     quote: "Every image had a platform, a crop and a job to do.",
   },
   {
+    slug: "fern-coal",
+    title: "Fern & Coal",
+    discipline: "Packaging & Product",
+    sector: "Lifestyle",
+    year: "2025",
+    client: "Fern & Coal",
+    ratio: "wide",
+    visual: "art-fern-coal",
+    intro:
+      "Packaging, product and launch visuals for an East London candle brand built around dark luxury, botanical materiality and controlled flame.",
+    quote: "Every image should feel like the moment just before you light it.",
+  },
+  {
     slug: "atlan",
     title: "ATLAN",
     discipline: "Brand Identity",
@@ -407,11 +420,135 @@ const folkSolsticeCase = {
     platforms: ["Amazon", "Shopify", "Instagram", "PR"],
   },
   nextProject: {
-    title: "YŌSO 養素",
-    slug: "yoso",
-    thumbnail: "/images/yoso/07-packaging-set.jpg",
-    visual: "art-yoso",
-    tagline: "Brand identity and packaging for a modern Chinese botanical skincare brand.",
+    title: "Fern & Coal",
+    slug: "fern-coal",
+    thumbnail: "/images/fern-coal/C4_key_visual_dark_garden.png",
+    visual: "art-fern-coal",
+    tagline: "Slow burn.",
+  },
+};
+
+const fernCoalCase = {
+  slug: "fern-coal",
+  title: "Fern & Coal",
+  tagline: "Slow burn.",
+  serviceType: "packaging",
+  services: ["Packaging & Product Visuals", "Launch Visuals", "Retail Display"],
+  client: "Fern & Coal",
+  sector: ["Luxury Scented Candles", "Home Fragrance", "East London"],
+  year: 2025,
+  heroImage: "/images/fern-coal/C4_key_visual_dark_garden.png",
+  coverImage: "/images/fern-coal/C4_key_visual_dark_garden.png",
+  coverVisual: "art-fern-coal",
+  subheadline: "Core collection launch for a three-vessel candle range, spanning DTC product imagery, dark studio packaging renders, campaign assets, retail displays, and exhibition mockups.",
+  launchCopy: {
+    hero: "Dark luxury, hand-poured.",
+    listing: "Three vessels. Three materials. One slow burn.",
+    gift: "Core collection gift set — matte black, concrete, ribbed glass.",
+  },
+  deliverables: [
+    {
+      category: "E-commerce",
+      description: "White and near-white product images for Shopify, Google Shopping, and DTC product galleries.",
+      count: 4,
+      images: [
+        { src: "/images/fern-coal/A1_hero_smoke_cedar_white.png", alt: "No. 01 SMOKE & CEDAR hero on pure white", aspect: "square", platform: "Shopify hero / Google Shopping" },
+        { src: "/images/fern-coal/A2_three_vessel_lineup_white.png", alt: "All three Fern & Coal vessels lined up on white", aspect: "wide", platform: "Shopify collection / Press kit" },
+        { src: "/images/fern-coal/A3_lit_candle_white_bg.png", alt: "No. 03 ASH & BLOOM lit on white background", aspect: "square", platform: "Product detail / DTC email" },
+        { src: "/images/fern-coal/A4_label_detail_closeup.png", alt: "No. 03 ribbed glass and label close-up", aspect: "square", platform: "Product detail gallery" },
+      ],
+    },
+    {
+      category: "Packaging renders",
+      description: "Dark studio images for gifting, press, material detail, and product-story pages.",
+      count: 4,
+      images: [
+        { src: "/images/fern-coal/B1_gift_box_dark_studio.png", alt: "No. 01 candle in matte black gift box", aspect: "portrait", platform: "DTC gift page / Press kit" },
+        { src: "/images/fern-coal/B2_three_vessels_concrete_moody.png", alt: "Three vessels on raw concrete in dark studio light", aspect: "wide", platform: "Brand story / Press kit" },
+        { src: "/images/fern-coal/B3_exploded_gift_flatlay.png", alt: "Exploded gift set flatlay with vessel, box, tissue, ribbon, and matchbook", aspect: "wide", platform: "DTC gift page / PR editorial" },
+        { src: "/images/fern-coal/B4_box_deboss_closeup.png", alt: "Black-on-black debossed Fern & Coal gift box lid", aspect: "square", platform: "Product detail / Press kit" },
+      ],
+    },
+    {
+      category: "Lifestyle / Campaign",
+      description: "Environmental candlelight images for homepage, email, editorial, and campaign hero usage.",
+      count: 4,
+      images: [
+        { src: "/images/fern-coal/C1_evening_interior_amber.png", alt: "Two Fern & Coal candles lit on a dark wooden sideboard", aspect: "wide", platform: "Homepage hero / Editorial" },
+        { src: "/images/fern-coal/C2_bathroom_shelf_morning.png", alt: "No. 02 concrete vessel on bathroom tile shelf with fern", aspect: "portrait", platform: "Instagram feed / Editorial" },
+        { src: "/images/fern-coal/C3_winter_table_setting.png", alt: "No. 03 ribbed glass candle lit on winter table with tea", aspect: "wide", platform: "Email campaign / DTC homepage" },
+        { src: "/images/fern-coal/C4_key_visual_dark_garden.png", alt: "Campaign key visual with three lit candles in a dark garden", aspect: "wide", platform: "Campaign hero / Advertising" },
+      ],
+    },
+    {
+      category: "Social / Launch",
+      description: "Pre-cropped social placements with safe zones for story UI and overlay text.",
+      count: 2,
+      images: [
+        { src: "/images/fern-coal/D1_story_9x16_smoke_cedar.png", alt: "Instagram Story asset with No. 01 lit in darkness", aspect: "portrait", platform: "Instagram Story / Reel / TikTok" },
+        { src: "/images/fern-coal/D2_feed_1x1_forest_floor.png", alt: "Overhead forest floor flatlay with No. 02 and ferns", aspect: "square", platform: "Instagram Feed / Pinterest" },
+      ],
+    },
+    {
+      category: "Press / Editorial",
+      description: "Lookbook-style flatlay for gift guides, press kits, and seasonal editorial placements.",
+      count: 1,
+      images: [
+        { src: "/images/fern-coal/E1_press_flatlay_linen.png", alt: "All three Fern & Coal vessels and gift components on ivory linen", aspect: "wide", platform: "Press kit / Gift guide" },
+      ],
+    },
+    {
+      category: "Social Mockups",
+      description: "Deployment mockups for pitch decks, PR reporting, and social content planning.",
+      count: 3,
+      images: [
+        { src: "/images/fern-coal/F1_instagram_grid_mockup.png", alt: "Nine-post Fern & Coal Instagram grid mockup", aspect: "square", platform: "Content planning / Pitch deck" },
+        { src: "/images/fern-coal/F2_iphone_feed_mockup.png", alt: "iPhone showing Fern & Coal Instagram feed post", aspect: "portrait", platform: "Social media report" },
+        { src: "/images/fern-coal/F3_iphone_story_in_hand.png", alt: "Hand holding iPhone with Fern & Coal Story active", aspect: "portrait", platform: "PR kit / Social report" },
+      ],
+    },
+    {
+      category: "Retail Display",
+      description: "Retail shelf and point-of-sale visuals for wholesale presentations and stockist kits.",
+      count: 2,
+      images: [
+        { src: "/images/fern-coal/G1_retail_shelf_display.png", alt: "Three Fern & Coal vessels on dark oak retail shelf", aspect: "wide", platform: "Retail pitch / Wholesale" },
+        { src: "/images/fern-coal/G2_pos_tabletop_display.png", alt: "Tabletop POS setup with No. 01 candle and display card", aspect: "portrait", platform: "Stockist kit / Retail pitch" },
+      ],
+    },
+    {
+      category: "Exhibition / Display Boards",
+      description: "Large-format campaign boards and in-situ display mockups for pop-up retail and launch events.",
+      count: 3,
+      images: [
+        { src: "/images/fern-coal/H1_pullup_banner_artwork.png", alt: "Pull-up banner artwork with dark garden candle visual", aspect: "portrait", platform: "Pop-up / Trade events" },
+        { src: "/images/fern-coal/H2_banner_in_situ.png", alt: "Pull-up banner in minimal pop-up space with product plinth", aspect: "portrait", platform: "Event documentation" },
+        { src: "/images/fern-coal/H3_exhibition_wall_panel.png", alt: "Exhibition wall panel with Fern & Coal product plinths", aspect: "wide", platform: "Gallery launch / Press coverage" },
+      ],
+    },
+  ],
+  stats: {
+    totalAssets: 23,
+    sku: 3,
+    formats: ["1:1", "2:3", "3:2", "9:16", "Print"],
+    platforms: ["Shopify DTC", "Instagram", "Press", "Gift retail", "Pop-up"],
+  },
+  pullQuotes: [
+    "The brief was singular: every image should feel like the moment just before you light it.",
+    "Three vessels, three materials. The job is to let each surface speak for itself — the photography just gets out of the way.",
+  ],
+  bodyText: [
+    "Fern & Coal came to us with three vessels and one sentence: slow burn. A matte black ceramic, a raw concrete cylinder, a ribbed clear glass. Same form, radically different materials. The challenge was never the individual SKU — it was making the three read as a coherent collection while keeping each material visually distinct.",
+    "We built the visual system around material honesty. No artificial warmth layered in. The concrete photographs like concrete — fine-grain, grey, slightly cold. The ceramic absorbs light rather than returning it. The ribbed glass refracts the flame from within when lit. Each vessel behaves differently under the same light, and that difference is the whole story.",
+    "The gift packaging presented a specific technical problem: a black-on-black debossed wordmark. The only way to read it is under a raking light. B4 is entirely that — one strip light at fifteen degrees, the letterforms catching just enough shadow to be legible. It is the most deliberately understated product shot in the set, and probably the most important for communicating the brand's positioning.",
+    "For the campaign key visual, we moved entirely outdoors — three lit vessels on dark slate stepping stones in a garden at dusk. No artificial light introduced. The flames are the only illumination, and they barely reach the surrounding ferns. It is a difficult shot to control technically, but it is the one that communicates what the brand actually is: dark, botanical, unhurried.",
+  ],
+  nextProject: {
+    title: "FOLK × SOLSTICE",
+    slug: "folk-solstice",
+    thumbnail: "/images/folk-solstice/C4-life-kv.jpg",
+    visual: "art-folk-solstice",
+    tagline: "Botanically brewed. Seasonally limited.",
   },
 };
 
@@ -860,6 +997,7 @@ function createCaseStudy(project, index) {
 const caseStudies = projects.map((project, index) => {
   if (project.slug === "yoso") return yosoCase;
   if (project.slug === "folk-solstice") return folkSolsticeCase;
+  if (project.slug === "fern-coal") return fernCoalCase;
   if (project.slug === "atlan") return atlanCase;
   if (project.slug === "muru") return muruCase;
   if (project.slug === "brume") return brumeCase;
@@ -1306,6 +1444,7 @@ function PackagingSuitePage({ caseStudy, onNavigate }) {
       <CaseHero caseStudy={caseStudy} />
       <PackagingSuiteIntro caseStudy={caseStudy} />
       <PackagingDeliverables deliverables={caseStudy.deliverables} />
+      {caseStudy.bodyText ? <PackagingNarrative caseStudy={caseStudy} /> : null}
       <PackagingStats stats={caseStudy.stats} />
       <NextProject nextProject={caseStudy.nextProject} onNavigate={onNavigate} />
     </article>
@@ -1384,6 +1523,25 @@ function PackagingImage({ image }) {
         {image.alt}
       </figcaption>
     </figure>
+  );
+}
+
+function PackagingNarrative({ caseStudy }) {
+  return (
+    <section className="packaging-narrative">
+      {caseStudy.pullQuotes ? (
+        <div className="packaging-quote-grid">
+          {caseStudy.pullQuotes.map((quote) => (
+            <blockquote key={quote}>{quote}</blockquote>
+          ))}
+        </div>
+      ) : null}
+      <div className="packaging-narrative-text">
+        {caseStudy.bodyText.map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
+        ))}
+      </div>
+    </section>
   );
 }
 
