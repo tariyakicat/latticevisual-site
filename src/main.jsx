@@ -129,16 +129,16 @@ const projects = [
   {
     slug: "morrow-coffee",
     title: "Morrow Coffee",
-    discipline: "Brand Identity",
+    discipline: "Brand Direction",
     sector: "Food & Drink",
-    year: "2026",
+    year: "2024",
     client: "Morrow Coffee",
     ratio: "tall",
     visual: "art-morrow",
-    coverImage: "/images/morrow-coffee/cover.png",
+    coverImage: "/images/morrow-coffee/C1_cafe_facade.png",
     intro:
-      "A warm identity system for a coffee brand balancing everyday familiarity with a stronger retail presence.",
-    quote: "A quiet identity can still become instantly recognisable.",
+      "Brand direction for a specialty coffee launch, built around the Ring mark, restrained retail applications and a system ready to scale.",
+    quote: "The ring is the mark of morning: cup rim, sun, and a complete thought.",
   },
   {
     slug: "aurelia-gifting",
@@ -835,6 +835,121 @@ const brumeCase = {
   },
 };
 
+const morrowCoffeeCase = {
+  slug: "morrow-coffee",
+  title: "Morrow Coffee",
+  tagline: "Good morning.",
+  serviceType: "brand-direction",
+  services: ["Brand Direction", "Visual Identity", "Retail Communication"],
+  client: "Morrow Coffee",
+  sector: ["Specialty Coffee", "Food & Drink", "East London"],
+  year: 2024,
+  heroImage: "/images/morrow-coffee/C1_cafe_facade.png",
+  coverImage: "/images/morrow-coffee/C1_cafe_facade.png",
+  coverVisual: "art-morrow",
+  subheadline:
+    "Brand direction for a specialty coffee launch, built around a restrained identity system that can carry product, campaign, retail, print, and social communication without feeling inflated.",
+  launchHighlights: [
+    {
+      label: "Mark",
+      value: "The Ring: a solid geometric washer that reads as cup rim, morning sun, and a quiet memory hook.",
+    },
+    {
+      label: "System",
+      value: "Roast, Milk, and a single Copper rule create a warm but disciplined identity for retail touchpoints.",
+    },
+    {
+      label: "Rollout",
+      value: "Cups, bags, menus, storefront, campaign posters, OOH, and social templates share one visual behaviour.",
+    },
+  ],
+  deliverables: [
+    {
+      category: "Identity System",
+      description: "Core documentation of the Ring mark, colour system, typography, and scale behaviour.",
+      count: 3,
+      images: [
+        { src: "/images/morrow-coffee/A1_ring_mark_three_grounds.png", alt: "Morrow Coffee Ring mark on Roast, Milk, and grey grounds", aspect: "square", platform: "Brand guidelines" },
+        { src: "/images/morrow-coffee/A2_colour_type_specimen.png", alt: "Morrow Coffee colour and typography specimen sheet", aspect: "square", platform: "Brand guidelines" },
+        { src: "/images/morrow-coffee/A3_ring_mark_scale_study.png", alt: "Morrow Coffee Ring mark scale study on Roast ground", aspect: "portrait", platform: "Identity documentation" },
+      ],
+    },
+    {
+      category: "Product Applications",
+      description: "Everyday coffee touchpoints showing the identity on cups, bags, sleeves, and takeaway packaging.",
+      count: 4,
+      images: [
+        { src: "/images/morrow-coffee/B1_takeaway_cup.png", alt: "Morrow Coffee matte Roast takeaway cup with Milk Ring mark", aspect: "square", platform: "Cup application" },
+        { src: "/images/morrow-coffee/B2_coffee_bag.png", alt: "Morrow Coffee 250g retail coffee bag with Copper rule", aspect: "square", platform: "Retail coffee bag" },
+        { src: "/images/morrow-coffee/B3_cup_sleeve.png", alt: "Morrow Coffee kraft cup sleeve detail with Roast Ring mark", aspect: "square", platform: "Cup sleeve detail" },
+        { src: "/images/morrow-coffee/B4_takeaway_bag.png", alt: "Morrow Coffee branded takeaway paper bag", aspect: "square", platform: "Retail takeaway" },
+      ],
+    },
+    {
+      category: "Retail & Environmental",
+      description: "Spatial applications proving the system can carry a café façade, counter environment, and uniform touchpoint.",
+      count: 3,
+      images: [
+        { src: "/images/morrow-coffee/C1_cafe_facade.png", alt: "Morrow Coffee matte Roast café façade with Milk Ring mark", aspect: "square", platform: "Café exterior" },
+        { src: "/images/morrow-coffee/C2_interior_counter.png", alt: "Morrow Coffee interior counter area with large wall Ring mark", aspect: "portrait", platform: "Retail interior" },
+        { src: "/images/morrow-coffee/C3_barista_apron.png", alt: "Morrow Coffee branded Roast barista apron", aspect: "square", platform: "Uniform / Staff" },
+      ],
+    },
+    {
+      category: "Print & Collateral",
+      description: "Matte printed pieces for handoff, menu navigation, and loyalty mechanics.",
+      count: 3,
+      images: [
+        { src: "/images/morrow-coffee/D1_business_cards.png", alt: "Morrow Coffee business card set on Milk linen", aspect: "square", platform: "Business cards" },
+        { src: "/images/morrow-coffee/D2_folded_menu.png", alt: "Morrow Coffee A5 folded menu card with Roast cover and Milk interior", aspect: "square", platform: "Menu card" },
+        { src: "/images/morrow-coffee/D3_loyalty_stamp_card.png", alt: "Morrow Coffee loyalty stamp cards with circular stamp system", aspect: "square", platform: "Loyalty card" },
+      ],
+    },
+    {
+      category: "Campaign Readiness",
+      description: "Launch campaign formats showing the Ring and Good Morning line across dark, light, and outdoor contexts.",
+      count: 3,
+      images: [
+        { src: "/images/morrow-coffee/E1_campaign_poster_dark.png", alt: "Morrow Coffee Good Morning launch poster on Roast ground", aspect: "portrait", platform: "Launch poster" },
+        { src: "/images/morrow-coffee/E2_ooh_outdoor.png", alt: "Morrow Coffee outdoor advertising panel in urban context", aspect: "square", platform: "OOH / Outdoor" },
+        { src: "/images/morrow-coffee/E3_campaign_keyvisual_light.png", alt: "Morrow Coffee campaign key visual on Milk ground mounted on Roast wall", aspect: "portrait", platform: "Campaign key visual" },
+      ],
+    },
+    {
+      category: "Digital & Social",
+      description: "Illustrative social templates using the same Roast/Milk rhythm and centred Ring logic.",
+      count: 2,
+      images: [
+        { src: "/images/morrow-coffee/F1_instagram_feed.png", alt: "Morrow Coffee Instagram Feed Now Open template", aspect: "square", platform: "Instagram Feed" },
+        { src: "/images/morrow-coffee/F2_instagram_grid.png", alt: "Morrow Coffee six-post Instagram grid preview", aspect: "square", platform: "Instagram Grid" },
+      ],
+    },
+  ],
+  stats: {
+    totalAssets: 18,
+    categories: 6,
+    formats: ["1:1", "2:3"],
+    platforms: ["Retail", "Product", "Print", "OOH", "Instagram"],
+  },
+  pullQuotes: [
+    "The Ring is the mark of morning: the rim of a cup, the sun before it clears the horizon, a complete thought.",
+    "The identity needed to feel confident at launch and restrained enough to scale.",
+  ],
+  bodyText: [
+    "Morrow Coffee entered a specialty coffee market where visual memory builds fast and fades faster. The brand needed an identity that could carry product, campaign, and retail communication without feeling inflated. The direction had to be confident enough for launch, but restrained enough to grow beyond the first wave of touchpoints.",
+    "The system is anchored by the Ring: two concentric circles forming a solid mark with an intentional void at its centre. It reads as the rim of a cup, the morning sun, and a complete thought. More importantly, it holds its form at every scale, from a cup sleeve to a café façade.",
+    "Colour does most of the atmospheric work. Roast gives the system weight without becoming cold. Milk keeps the brand warm, tactile, and approachable. Copper appears only as a line or small accent, a controlled moment of warmth rather than a palette takeover.",
+    "The rollout was designed as a working brand direction kit: cups, retail coffee bags, takeaway bags, menus, loyalty cards, campaign posters, OOH, and social templates. Each asset is different in use, but each returns to the same behaviour: centred geometry, generous spacing, matte materials, and quiet confidence.",
+  ],
+  nextProject: {
+    title: "Aurelia Gifting",
+    slug: "aurelia-gifting",
+    thumbnail: "/images/aurelia-gifting/cover.png",
+    visual: "art-aurelia",
+    tagline: "Gift packaging visuals and product cards for a polished small-brand launch.",
+  },
+};
+
 const kikoHomeCase = {
   slug: "kiko-home",
   title: "Kiko Home",
@@ -1194,6 +1309,7 @@ const caseStudies = projects.map((project, index) => {
   if (project.slug === "atlan") return atlanCase;
   if (project.slug === "muru") return muruCase;
   if (project.slug === "brume") return brumeCase;
+  if (project.slug === "morrow-coffee") return morrowCoffeeCase;
   if (project.slug === "kiko-home") return kikoHomeCase;
   if (project.slug === "foundry-market") return foundryMarketCase;
   return createCaseStudy(project, index);
@@ -1783,7 +1899,7 @@ function CaseStudyPage({ slug, onNavigate }) {
     return <PackagingSuitePage caseStudy={caseStudy} onNavigate={onNavigate} />;
   }
 
-  if (caseStudy.serviceType === "campaign" || caseStudy.serviceType === "brand-story") {
+  if (caseStudy.serviceType === "campaign" || caseStudy.serviceType === "brand-story" || caseStudy.serviceType === "brand-direction") {
     return <CampaignSuitePage caseStudy={caseStudy} onNavigate={onNavigate} />;
   }
 
