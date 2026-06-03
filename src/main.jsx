@@ -2170,7 +2170,7 @@ function ProjectVisual({ visual, coverImage }) {
 
   if (!failed) {
     return (
-      <div className={`project-visual project-cover ${visual}`} aria-hidden="true">
+      <div className="project-visual project-cover" aria-hidden="true">
         <img src={coverImage} alt="" loading="lazy" onError={() => setFailed(true)} />
       </div>
     );

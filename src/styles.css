@@ -562,6 +562,16 @@ a {
   transform: scale(1.03);
 }
 
+.project-cover::before,
+.project-cover::after,
+.project-cover span,
+.project-card:hover .project-cover::before,
+.project-card:hover .project-cover::after,
+.project-card:hover .project-cover span {
+  display: none;
+  content: none;
+}
+
 .art-yoso {
   background: #111311;
 }
