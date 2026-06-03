@@ -36,14 +36,9 @@ const services = [
     description: "Social media graphics, ad creatives, event posters, website banners and seasonal visual systems.",
     engagement: "One-off / Monthly",
   },
-  {
-    name: "Ongoing Visual Support",
-    description: "Monthly visual support across social, e-commerce, product drops and packaging extensions.",
-    engagement: "Retainer",
-  },
 ];
 
-const disciplines = ["All", "Brand Identity", "Brand Direction", "Packaging & Product", "Campaign Design", "Ongoing Support"];
+const disciplines = ["All", "Brand Identity", "Brand Direction", "Packaging & Product", "Campaign Design"];
 const sectors = ["All", "Beauty", "Food & Drink", "Lifestyle", "Interiors", "Retail", "Wellness"];
 
 const projects = [
@@ -126,19 +121,6 @@ const projects = [
     quote: "The scent of the invisible.",
   },
   {
-    slug: "nova-skin-lab",
-    title: "Nova Skin Lab",
-    discipline: "Packaging & Product",
-    sector: "Beauty",
-    year: "2026",
-    client: "Nova Skin Lab",
-    ratio: "wide",
-    visual: "art-nova",
-    intro:
-      "A refined packaging and product visual system for a skincare brand built around clinical calm, soft contrast and shelf-ready clarity.",
-    quote: "The visual system needed to feel precise, but never cold.",
-  },
-  {
     slug: "morrow-coffee",
     title: "Morrow Coffee",
     discipline: "Brand Identity",
@@ -189,32 +171,6 @@ const projects = [
     intro:
       "Brand story, positioning and art direction for an independent retail concept built around curated everyday objects and material seriousness.",
     quote: "The right everyday object, treated with attention, becomes something more than it was.",
-  },
-  {
-    slug: "luna-bakehouse",
-    title: "Luna Bakehouse",
-    discipline: "Ongoing Support",
-    sector: "Food & Drink",
-    year: "2026",
-    client: "Luna Bakehouse",
-    ratio: "tall",
-    visual: "art-luna",
-    intro:
-      "Monthly visual support for social drops, seasonal menus, packaging extensions and e-commerce refreshes.",
-    quote: "Consistency matters most when a brand is always making something new.",
-  },
-  {
-    slug: "senka-campaign",
-    title: "SENKA 鲜 — Campaign Design",
-    discipline: "Campaign Design",
-    sector: "Beauty",
-    year: "2024",
-    client: "SENKA 鲜",
-    ratio: "wide",
-    visual: "art-senka",
-    intro:
-      "Social and e-commerce campaign design for a seasonal skincare launch, built around freshness, product rhythm and digital retail clarity.",
-    quote: "The campaign needed to feel immediate, seasonal and easy to scale across every launch asset.",
   },
 ];
 
@@ -334,11 +290,11 @@ const yosoCase = {
   ],
   collaborators: [],
   nextProject: {
-    title: "SENKA 鲜 — Campaign Design",
-    slug: "senka-campaign",
-    thumbnail: "/images/senka/cover.jpg",
-    visual: "art-senka",
-    tagline: "Social and e-commerce campaign for a seasonal skincare launch.",
+    title: "FOLK × SOLSTICE",
+    slug: "folk-solstice",
+    thumbnail: "/images/folk-solstice/C4-life-kv.jpg",
+    visual: "art-folk-solstice",
+    tagline: "Botanically brewed. Seasonally limited.",
   },
 };
 
@@ -1089,11 +1045,11 @@ const foundryMarketCase = {
     "For rollout, the deliverable is not a static presentation but a working art direction document — a set of images that a photographer, a social media manager, or a store designer can use to make new work in the brand's register without needing a full brief. The brand voice is in the images, not just in the guidelines.",
   ],
   nextProject: {
-    title: "Luna Bakehouse",
-    slug: "luna-bakehouse",
+    title: "YŌSO 養素",
+    slug: "yoso",
     thumbnail: "",
-    visual: "art-luna",
-    tagline: "Monthly visual support for social drops, seasonal menus, packaging extensions and e-commerce refreshes.",
+    visual: "art-yoso",
+    tagline: "Brand identity and packaging for a modern Chinese botanical skincare brand.",
   },
 };
 
@@ -1111,7 +1067,6 @@ const serviceLabels = {
   "Brand Direction": ["Brand Direction", "Campaign & Communication Design"],
   "Packaging & Product": ["Packaging & Product Visuals", "Brand Identity"],
   "Campaign Design": ["Campaign & Communication Design", "Product Visuals"],
-  "Ongoing Support": ["Ongoing Visual Support", "Campaign & Communication Design"],
 };
 
 function createCaseStudy(project, index) {
@@ -1236,25 +1191,127 @@ const caseStudies = projects.map((project, index) => {
 
 const newsPosts = [
   {
+    slug: "visual-consistency-small-brands",
     title: "How visual consistency helps small brands look larger",
     category: "Brand Systems",
     date: "May 2026",
+    readTime: "6 min read",
     excerpt:
-      "A practical note on why colour, type, packaging and campaign assets should be designed as one connected system.",
+      "Why colour, type, packaging and campaign assets should be designed as one connected system for emerging consumer brands.",
+    metaDescription:
+      "A practical guide to visual consistency for small brands, covering identity systems, packaging, e-commerce images, campaign assets and brand recognition.",
+    sections: [
+      {
+        heading: "Consistency is not sameness",
+        paragraphs: [
+          "For small brands, visual consistency is often misunderstood as repetition. The goal is not to make every asset identical. The goal is to make every touchpoint feel like it belongs to the same decision-making system. A logo on a box, a product image on Shopify, an Instagram launch tile and a wholesale PDF can all look different while still behaving like one brand.",
+          "That matters because emerging brands rarely get unlimited attention. A customer might first see a product in a social post, then again in a search result, then finally on a product page. If each surface looks as though it came from a different team, the brand has to rebuild trust every time. Consistency reduces that friction.",
+        ],
+      },
+      {
+        heading: "The parts that need to agree",
+        paragraphs: [
+          "The most reliable systems align five things: colour, typography, image style, spacing and material cues. Colour gives the brand an immediate memory hook. Type controls tone and hierarchy. Image style tells the audience whether the brand is clinical, tactile, editorial, playful or restrained. Spacing determines whether the work feels considered or improvised. Material cues connect the digital world back to the product in someone's hand.",
+          "A small brand does not need a massive guideline document to achieve this. It needs a few rules that show up everywhere: how much margin a layout uses, how product names are set, what kind of shadows appear in photography, how close a crop can get, and when an accent colour is allowed to appear.",
+        ],
+      },
+      {
+        heading: "Packaging and digital need to be planned together",
+        paragraphs: [
+          "Packaging is often designed first, then digital assets are created later as a separate task. That split creates problems. A label that looks elegant on a shelf may not survive a square product crop. A subtle foil detail may disappear in an e-commerce thumbnail. A beautiful box interior may never be photographed in a way that explains the unboxing value.",
+          "When packaging and digital are planned together, the brand gains more from every design decision. The colour on the carton can become a campaign ground. A label detail can become a product-page close-up. A shipping insert can become a social post. The system works harder because it was built as one connected visual language.",
+        ],
+      },
+      {
+        heading: "Looking larger is really about looking prepared",
+        paragraphs: [
+          "A small brand looks larger when it appears prepared across more than one context. Customers do not necessarily count the number of assets. They notice whether the brand seems to know what it is doing. A coherent set of images, cards, social templates and product pages signals that care has been taken before the sale.",
+          "That confidence is commercial. It helps press understand the story faster, helps retailers imagine the brand on a shelf, and helps customers feel less risk when buying from a young company. Visual consistency is not decoration. It is one of the ways a small brand borrows the trust usually reserved for bigger ones.",
+        ],
+      },
+    ],
   },
   {
+    slug: "premium-packaging-without-overdesigning",
     title: "What makes packaging feel premium without over-designing it",
     category: "Packaging",
     date: "May 2026",
+    readTime: "7 min read",
     excerpt:
-      "Material cues, spacing, restraint and product hierarchy often matter more than decorative complexity.",
+      "Material cues, spacing, restraint and product hierarchy often matter more than decorative complexity in premium packaging design.",
+    metaDescription:
+      "What makes packaging feel premium? A practical article on restraint, material choices, hierarchy, finishes and product photography for consumer brands.",
+    sections: [
+      {
+        heading: "Premium is usually quieter than people expect",
+        paragraphs: [
+          "Premium packaging does not have to be ornate. In many categories, the strongest signal is restraint: fewer elements, better spacing, clearer hierarchy and material decisions that can be felt before they are explained. A box can feel expensive because of its weight, the way it opens, the paper texture, or the precision of one small deboss.",
+          "Over-design often happens when a brand tries to prove value by adding more. More pattern, more claims, more badges, more finishes. The result can feel busy rather than considered. Premium packaging usually does the opposite. It removes the elements that do not earn their place.",
+        ],
+      },
+      {
+        heading: "Hierarchy is the first luxury cue",
+        paragraphs: [
+          "A premium pack tells the customer what to look at first. The brand name, product name, variant, volume, benefit and legal information cannot all shout at once. Good hierarchy creates calm because the eye knows where to land. This is especially important for small brands, where unfamiliarity already asks the customer to work harder.",
+          "The hierarchy should also survive distance. At shelf level, the pack needs one clear read. In a product grid, it needs a thumbnail read. In a close-up, it needs material reward. Designing for those three distances is more useful than adding another decorative layer.",
+        ],
+      },
+      {
+        heading: "Materials carry more meaning than graphics",
+        paragraphs: [
+          "Paper stock, glass colour, closure weight, label texture and the finish of a print process all carry brand meaning. A matte black rigid box says something different from uncoated kraft. A translucent label says something different from a blind emboss. These decisions should come from the brand position, not from what looks fashionable in a mockup.",
+          "The best premium packaging systems choose one or two material moments and let them do the work. That might be a heavy cap, a natural paper label, a raking-light deboss, or a precise colour contrast between vessel and carton. The point is not to make the pack expensive for its own sake. The point is to make the brand's standards visible.",
+        ],
+      },
+      {
+        heading: "Product visuals complete the premium signal",
+        paragraphs: [
+          "Packaging rarely communicates by itself. It appears in e-commerce images, retail decks, social posts, gift guides and press emails. If the photography flattens the material quality, the premium signal is weakened. A textured board needs raking light. A glass vessel needs controlled reflections. A subtle label needs macro detail.",
+          "This is why packaging and product visuals should be developed together. The image set should explain what the pack feels like, how it opens, why the material choices matter, and how the product behaves in use. Premium is not one static pack shot. It is a sequence of evidence.",
+        ],
+      },
+    ],
   },
   {
+    slug: "launch-visuals-before-product-photoshoot",
     title: "Building launch visuals before a product photoshoot",
     category: "Product Visuals",
     date: "May 2026",
+    readTime: "6 min read",
     excerpt:
       "How renders, mockups and structured art direction can help a brand prepare its campaign before final production assets arrive.",
+    metaDescription:
+      "How brands can prepare launch visuals before a photoshoot using renders, mockups, art direction systems and platform-specific image planning.",
+    sections: [
+      {
+        heading: "Launch timelines rarely wait for perfect photography",
+        paragraphs: [
+          "Many brands reach launch planning before final product photography is ready. Packaging may still be in production. The product may exist only as a prototype. Retailers may need a deck, the website may need placeholder image dimensions, and social planning may need a visual direction weeks before the shoot.",
+          "This is where structured launch visuals are useful. They do not replace final photography. They create a visual plan the team can align around before production catches up. Renders, mockups, art direction references and platform-specific layouts help the brand make decisions earlier and avoid designing in a panic at the end.",
+        ],
+      },
+      {
+        heading: "Renders are strongest when they have a job",
+        paragraphs: [
+          "A render should not exist just because it looks polished. It should answer a practical question: what does the product look like on white? How does the full range line up? What does the gift set reveal? What detail needs to be shown on a product page? What image will press use if they only choose one?",
+          "When every render has a platform and a crop, the asset library becomes more useful. A Shopify hero, a Google Shopping image, an Instagram Story cover and a wholesale deck visual all ask for different compositions. Planning those formats early prevents one image from being stretched across every need.",
+        ],
+      },
+      {
+        heading: "Art direction prevents the shoot from starting cold",
+        paragraphs: [
+          "The most valuable pre-shoot work is often not the image itself, but the decision behind it. Surface, light, crop, prop logic, negative space, shadow quality and colour temperature can all be defined before the photographer arrives. That gives the shoot a clear standard and reduces vague feedback later.",
+          "A strong art direction pack shows what the brand world looks like, what it avoids, and how product images should behave across contexts. It can include reference renders, flatlays, lighting notes, safe zones for text, and examples of image families. The goal is to make the final photography easier to brief and easier to judge.",
+        ],
+      },
+      {
+        heading: "The best launch systems are replaceable",
+        paragraphs: [
+          "Pre-launch visuals should be built so they can be replaced by final photography without breaking the campaign. If a template depends on one exact mockup, the system is fragile. If it depends on clear zones, consistent hierarchy and repeatable image behaviour, the brand can swap in final assets as they arrive.",
+          "That flexibility is especially useful for small teams. A launch system might begin with renders, move into studio photography, expand into lifestyle imagery, and then become social templates. When the underlying visual logic is sound, each new asset strengthens the system instead of forcing a redesign.",
+        ],
+      },
+    ],
   },
 ];
 
@@ -1273,7 +1330,7 @@ function App() {
     document.title = getPageTitle(path);
     document
       .querySelector("meta[name='description']")
-      ?.setAttribute("content", "Lattice Visual is a brand visualization studio for identity, packaging, product visuals and campaign design.");
+      ?.setAttribute("content", getMetaDescription(path));
   }, [path]);
 
   const navigate = (target) => {
@@ -1307,9 +1364,14 @@ function renderRoute(path, navigate) {
   if (path.startsWith("/work/")) return <CaseStudyPage slug={path.replace("/work/", "")} onNavigate={navigate} />;
   if (path === "/services") return <ServicesPage />;
   if (path === "/about") return <AboutPage />;
-  if (path === "/news" || path === "/blog") return <NewsPage />;
+  if (path.startsWith("/news/") || path.startsWith("/blog/")) return <NewsArticlePage slug={getNewsSlugFromPath(path)} onNavigate={navigate} />;
+  if (path === "/news" || path === "/blog") return <NewsPage onNavigate={navigate} />;
   if (path === "/contact") return <ContactPage />;
   return <HomePage onNavigate={navigate} />;
+}
+
+function getNewsSlugFromPath(path) {
+  return path.replace(/^\/(news|blog)\//, "");
 }
 
 function getPageTitle(path) {
@@ -1321,9 +1383,26 @@ function getPageTitle(path) {
   }
   if (path === "/services") return "Services | Lattice Visual";
   if (path === "/about") return "About | Lattice Visual";
+  if (path.startsWith("/news/") || path.startsWith("/blog/")) {
+    const post = newsPosts.find((item) => item.slug === getNewsSlugFromPath(path));
+    return `${post?.title || "News"} | Lattice Visual`;
+  }
   if (path === "/news" || path === "/blog") return "News | Lattice Visual";
   if (path === "/contact") return "Contact | Lattice Visual";
   return "Lattice Visual | Brand Visualization Studio";
+}
+
+function getMetaDescription(path) {
+  if (path.startsWith("/news/") || path.startsWith("/blog/")) {
+    const post = newsPosts.find((item) => item.slug === getNewsSlugFromPath(path));
+    return post?.metaDescription || "Articles on brand identity, packaging, product visuals and campaign design from Lattice Visual.";
+  }
+
+  if (path === "/news" || path === "/blog") {
+    return "Articles on brand identity, packaging, product visuals and campaign design for emerging consumer brands.";
+  }
+
+  return "Lattice Visual is a brand visualization studio for identity, packaging, product visuals and campaign design.";
 }
 
 function Navbar({ path, menuOpen, onMenuToggle, onNavigate, onSearchOpen }) {
@@ -1494,7 +1573,7 @@ function WorkPage({ onNavigate }) {
 
   return (
     <section className="page-section">
-      <PageHeader eyebrow="Work" title="Our Work" intro="A portfolio structure for brand identities, packaging systems, campaign visuals and ongoing design support." />
+      <PageHeader eyebrow="Work" title="Our Work" intro="A portfolio structure for brand identities, packaging systems, campaign visuals and communication design." />
       <FilterGroup title="Discipline" options={disciplines} active={discipline} onChange={setDiscipline} />
       <FilterGroup title="Sector" options={sectors} active={sector} onChange={setSector} />
       <div className="work-columns">
@@ -1527,7 +1606,7 @@ function FilterGroup({ title, options, active, onChange }) {
 function ServicesPage() {
   return (
     <section className="page-section">
-      <PageHeader eyebrow="Services" title="Visual systems for brands that need to look ready." intro="Work can begin with strategy, identity, packaging, campaign assets or an ongoing support model." />
+      <PageHeader eyebrow="Services" title="Visual systems for brands that need to look ready." intro="Work can begin with strategy, identity, packaging, product visuals or campaign assets." />
       <div className="service-detail-list">
         {services.map((service, index) => (
           <article key={service.name}>
@@ -1545,7 +1624,7 @@ function ServicesPage() {
 function AboutPage() {
   return (
     <section className="page-section about-page">
-      <PageHeader eyebrow="About" title="兰格视觉 / Lattice Visual" intro="A brand visualization studio helping emerging consumer brands build sharper visual identities, packaging and campaign systems." />
+      <PageHeader eyebrow="About" title="Lattice Visual" intro="A brand visualization studio helping emerging consumer brands build sharper visual identities, packaging and campaign systems." />
       <div className="about-grid">
         <p>
           Lattice Visual works with founders and small teams who need design that feels structured, polished and commercially useful. The focus is not on decoration, but on building a visual language that can hold together across every touchpoint.
@@ -1558,19 +1637,60 @@ function AboutPage() {
   );
 }
 
-function NewsPage() {
+function NewsPage({ onNavigate }) {
   return (
     <section className="page-section">
-      <PageHeader eyebrow="News" title="Notes on brand visualization" intro="Short articles and observations on identity, packaging, product visuals and communication design." />
+      <PageHeader eyebrow="News" title="Notes on brand visualization" intro="Practical articles on identity, packaging, product visuals and communication design for emerging consumer brands." />
       <div className="news-grid">
         {newsPosts.map((post) => (
-          <article className="news-card" key={post.title}>
+          <button className="news-card" type="button" key={post.slug} onClick={() => onNavigate(`/news/${post.slug}`)}>
             <span>{post.category}</span>
             <h2>{post.title}</h2>
             <p>{post.excerpt}</p>
-            <small>{post.date}</small>
-          </article>
+            <small>{post.date} · {post.readTime}</small>
+            <strong>Read article →</strong>
+          </button>
         ))}
+      </div>
+    </section>
+  );
+}
+
+function NewsArticlePage({ slug, onNavigate }) {
+  const post = newsPosts.find((item) => item.slug === slug);
+
+  if (!post) {
+    return (
+      <section className="page-section">
+        <PageHeader eyebrow="News" title="Article not found" intro="The article you are looking for may have moved." />
+        <button className="load-more" type="button" onClick={() => onNavigate("/news")}>
+          Back to News
+        </button>
+      </section>
+    );
+  }
+
+  return (
+    <section className="page-section news-article-page">
+      <PageHeader eyebrow={post.category} title={post.title} intro={post.excerpt} />
+      <div className="article-meta">
+        <span>{post.date}</span>
+        <span>{post.readTime}</span>
+      </div>
+      <article className="article-body">
+        {post.sections.map((section) => (
+          <section key={section.heading}>
+            <h2>{section.heading}</h2>
+            {section.paragraphs.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </section>
+        ))}
+      </article>
+      <div className="article-actions">
+        <button className="text-link" type="button" onClick={() => onNavigate("/news")}>
+          ← Back to News
+        </button>
       </div>
     </section>
   );
@@ -1608,8 +1728,8 @@ function ContactPage() {
             <>
               <FormField label="Name" name="name" />
               <FormField label="Company" name="company" />
-              <FormSelect label="Service needed" name="service" options={["Brand Identity", "Brand Direction", "Packaging & Product", "Campaign Design", "Ongoing Support", "Not sure yet"]} />
-              <FormSelect label="Project stage" name="stage" options={["New brand", "Rebrand", "New product launch", "Campaign launch", "Ongoing support"]} />
+              <FormSelect label="Service needed" name="service" options={["Brand Identity", "Brand Direction", "Packaging & Product", "Campaign Design", "Not sure yet"]} />
+              <FormSelect label="Project stage" name="stage" options={["New brand", "Rebrand", "New product launch", "Campaign launch"]} />
               <label>
                 <span>Project brief</span>
                 <textarea name="brief" rows="5" />
