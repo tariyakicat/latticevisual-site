@@ -51,6 +51,7 @@ const projects = [
     client: "YŌSO Skincare",
     ratio: "wide",
     visual: "art-yoso",
+    coverImage: "/images/yoso/07-packaging-set.jpg",
     intro:
       "Brand identity and packaging for a modern Chinese botanical skincare brand built around quiet ritual, precise formulation and a restrained product system.",
     quote: "Precision and patience became the central tension of the identity.",
@@ -64,6 +65,7 @@ const projects = [
     client: "FOLK",
     ratio: "wide",
     visual: "art-folk-solstice",
+    coverImage: "/images/folk-solstice/C4-life-kv.jpg",
     intro:
       "A complete launch visual suite for a limited-edition botanical sparkling water collection, spanning e-commerce, packaging, campaign and social assets.",
     quote: "Every image had a platform, a crop and a job to do.",
@@ -77,6 +79,7 @@ const projects = [
     client: "Fern & Coal",
     ratio: "wide",
     visual: "art-fern-coal",
+    coverImage: "/images/fern-coal/C4_key_visual_dark_garden.png",
     intro:
       "Packaging, product and launch visuals for an East London candle brand built around dark luxury, botanical materiality and controlled flame.",
     quote: "Every image should feel like the moment just before you light it.",
@@ -90,6 +93,7 @@ const projects = [
     client: "ATLAN",
     ratio: "wide",
     visual: "art-atlan",
+    coverImage: "/images/atlan/11-lifestyle-studio.jpg",
     intro:
       "Brand identity, product imagery and editorial photography for a Copenhagen lighting studio built around the geometry of light and absence.",
     quote: "The shade is a hypothesis. The shadow is the proof.",
@@ -103,6 +107,7 @@ const projects = [
     client: "MURU",
     ratio: "wide",
     visual: "art-muru",
+    coverImage: "/images/muru/15-brand-collection.jpg",
     intro:
       "Brand identity, product imagery and editorial photography for a Helsinki ceramics studio built around tactility, surface and hand-thrown imperfection.",
     quote: "Objects made by hand accumulate the intention of the maker.",
@@ -116,6 +121,7 @@ const projects = [
     client: "BRUME",
     ratio: "wide",
     visual: "art-brume",
+    coverImage: "/images/brume/11-lifestyle-fog.jpg",
     intro:
       "Brand identity, packaging imagery and editorial photography for a Grasse perfume house built around scent, absence and controlled darkness.",
     quote: "The scent of the invisible.",
@@ -129,6 +135,7 @@ const projects = [
     client: "Morrow Coffee",
     ratio: "tall",
     visual: "art-morrow",
+    coverImage: "/images/morrow-coffee/cover.png",
     intro:
       "A warm identity system for a coffee brand balancing everyday familiarity with a stronger retail presence.",
     quote: "A quiet identity can still become instantly recognisable.",
@@ -142,6 +149,7 @@ const projects = [
     client: "Aurelia",
     ratio: "standard",
     visual: "art-aurelia",
+    coverImage: "/images/aurelia-gifting/cover.png",
     intro:
       "Gift packaging visuals and product cards designed to make a small brand feel polished across web, print and unboxing.",
     quote: "Every touchpoint should feel like part of the same gesture.",
@@ -155,6 +163,7 @@ const projects = [
     client: "Kiko Home",
     ratio: "ultra",
     visual: "art-kiko",
+    coverImage: "/images/kiko-home/F1_storefront_exterior.png",
     intro:
       "A campaign and communication design system for a home goods retail launch, built around repeatable grid logic, restrained colour and the Slot Mark.",
     quote: "The challenge was not to add more decoration, but to make every repeated element work harder.",
@@ -168,6 +177,7 @@ const projects = [
     client: "Foundry Market",
     ratio: "standard",
     visual: "art-foundry",
+    coverImage: "/images/foundry-market/A1_brand_world_hero.png",
     intro:
       "Brand story, positioning and art direction for an independent retail concept built around curated everyday objects and material seriousness.",
     quote: "The right everyday object, treated with attention, becomes something more than it was.",
@@ -933,7 +943,7 @@ const kikoHomeCase = {
   nextProject: {
     title: "Foundry Market",
     slug: "foundry-market",
-    thumbnail: "",
+    thumbnail: "/images/foundry-market/A1_brand_world_hero.png",
     visual: "art-foundry",
     tagline: "Brand story, positioning and art direction for an independent retail concept.",
   },
@@ -1047,7 +1057,7 @@ const foundryMarketCase = {
   nextProject: {
     title: "YŌSO 養素",
     slug: "yoso",
-    thumbnail: "",
+    thumbnail: "/images/yoso/07-packaging-set.jpg",
     visual: "art-yoso",
     tagline: "Brand identity and packaging for a modern Chinese botanical skincare brand.",
   },
@@ -1083,8 +1093,8 @@ function createCaseStudy(project, index) {
     client: project.client,
     sector: sectorForCase,
     year: Number(project.year) || 2026,
-    heroImage: `${imageRoot}/hero.jpg`,
-    coverImage: `${imageRoot}/cover.jpg`,
+    heroImage: project.coverImage || `${imageRoot}/hero.jpg`,
+    coverImage: project.coverImage || `${imageRoot}/cover.jpg`,
     coverVisual: project.visual,
     pullQuotes: [
       {
@@ -1170,7 +1180,7 @@ function createCaseStudy(project, index) {
     nextProject: {
       title: nextProject.title,
       slug: nextProject.slug,
-      thumbnail: `/images/${nextProject.slug}/cover.jpg`,
+      thumbnail: nextProject.coverImage || `/images/${nextProject.slug}/cover.jpg`,
       visual: nextProject.visual,
       tagline: nextProject.intro,
     },
@@ -1458,10 +1468,8 @@ function HomePage({ onNavigate }) {
 function Hero({ onNavigate }) {
   return (
     <section className="hero">
-      <div className="hero-reel" aria-hidden="true">
-        {projects.slice(0, 4).map((project) => (
-          <ProjectVisual key={project.slug} visual={project.visual} />
-        ))}
+      <div className="hero-background" aria-hidden="true">
+        <img src="/images/site/home-hero-background.png" alt="" />
       </div>
       <div className="hero-content">
         <p className="eyebrow">Brand Visualization Studio</p>
@@ -2144,7 +2152,7 @@ function CaseNextVisual({ nextProject }) {
 function ProjectCard({ project, featured = false, onNavigate }) {
   return (
     <article className={`project-card ${featured ? "featured" : ""}`} onClick={() => onNavigate(`/work/${project.slug}`)}>
-      <ProjectVisual visual={project.visual} />
+      <ProjectVisual visual={project.visual} coverImage={project.coverImage} />
       <div className="project-overlay">
         <h2>{project.title}</h2>
         <p>{project.discipline}</p>
@@ -2157,14 +2165,18 @@ function ProjectCard({ project, featured = false, onNavigate }) {
   );
 }
 
-function ProjectVisual({ visual }) {
-  return (
-    <div className={`project-visual ${visual}`} aria-hidden="true">
-      <span />
-      <span />
-      <span />
-    </div>
-  );
+function ProjectVisual({ visual, coverImage }) {
+  const [failed, setFailed] = useState(!coverImage);
+
+  if (!failed) {
+    return (
+      <div className={`project-visual project-cover ${visual}`} aria-hidden="true">
+        <img src={coverImage} alt="" loading="lazy" onError={() => setFailed(true)} />
+      </div>
+    );
+  }
+
+  return <div className="project-visual project-cover-placeholder" aria-hidden="true" />;
 }
 
 function PageHeader({ eyebrow, title, intro }) {
