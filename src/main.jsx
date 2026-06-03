@@ -182,13 +182,13 @@ const projects = [
     title: "Foundry Market",
     discipline: "Brand Direction",
     sector: "Retail",
-    year: "2026",
+    year: "2025",
     client: "Foundry Market",
     ratio: "standard",
     visual: "art-foundry",
     intro:
-      "Brand story, positioning and art direction for an independent retail concept built around curated everyday objects.",
-    quote: "The brand direction gave the visuals a point of view before design began.",
+      "Brand story, positioning and art direction for an independent retail concept built around curated everyday objects and material seriousness.",
+    quote: "The right everyday object, treated with attention, becomes something more than it was.",
   },
   {
     slug: "luna-bakehouse",
@@ -983,6 +983,120 @@ const kikoHomeCase = {
   },
 };
 
+const foundryMarketCase = {
+  slug: "foundry-market",
+  title: "Foundry Market",
+  tagline: "Found with care.",
+  serviceType: "brand-story",
+  services: ["Brand Story", "Positioning", "Art Direction"],
+  client: "Foundry Market",
+  sector: ["Independent Retail", "Curated Everyday Objects", "Brand Direction"],
+  year: 2025,
+  heroImage: "/images/foundry-market/A1_brand_world_hero.png",
+  coverImage: "/images/foundry-market/A1_brand_world_hero.png",
+  coverVisual: "art-foundry",
+  subheadline: "Brand story, positioning and art direction for an independent retail concept built around curated everyday objects.",
+  launchHighlights: [
+    {
+      label: "World",
+      value: "Raw concrete, dark iron, aged oak, linen, and single-source light define the brand before any campaign asset appears.",
+    },
+    {
+      label: "Narrative",
+      value: "Founder-led imagery shows selection, origin, and curation in progress rather than polished retail performance.",
+    },
+    {
+      label: "Direction",
+      value: "A working visual register for photographers, content teams, retail environments, brand documents, and social planning.",
+    },
+  ],
+  deliverables: [
+    {
+      category: "Art Direction & Brand World",
+      description: "Definitive reference images establishing the world Foundry Market inhabits: objects, surfaces, light, and space.",
+      count: 3,
+      images: [
+        { src: "/images/foundry-market/A1_brand_world_hero.png", alt: "Foundry Market curated everyday objects on dark iron surface", aspect: "wide", platform: "Brand document / Editorial" },
+        { src: "/images/foundry-market/A2_material_study.png", alt: "Foundry Market material study with concrete, iron, linen, and oak", aspect: "square", platform: "Art direction reference" },
+        { src: "/images/foundry-market/A3_brand_environment.png", alt: "Foundry Market honest retail environment with concrete floor and sparse shelving", aspect: "wide", platform: "Interior brief / Press" },
+      ],
+    },
+    {
+      category: "Founder Story & Narrative",
+      description: "Documentary-style images showing the act of curation: selecting, handling, sourcing, and shortlisting objects.",
+      count: 3,
+      images: [
+        { src: "/images/foundry-market/B1_curation_hands.png", alt: "Working hands holding a plain Cream ceramic cup", aspect: "portrait", platform: "Founder content" },
+        { src: "/images/foundry-market/B2_sourcing_origin.png", alt: "Foundry Market paper bag in a maker workshop origin context", aspect: "wide", platform: "Brand story editorial" },
+        { src: "/images/foundry-market/B3_curation_process_overhead.png", alt: "Overhead curation process with everyday objects under consideration", aspect: "square", platform: "Instagram / Narrative" },
+      ],
+    },
+    {
+      category: "Product Art Direction",
+      description: "Photography standards for product imagery: single object, object family, and macro material detail.",
+      count: 3,
+      images: [
+        { src: "/images/foundry-market/C1_single_object_hero.png", alt: "Plain Cream ceramic cup on dark raw concrete", aspect: "square", platform: "Product photography" },
+        { src: "/images/foundry-market/C2_object_family.png", alt: "Seven curated everyday objects arranged on a long aged surface", aspect: "wide", platform: "Collection launch / Editorial" },
+        { src: "/images/foundry-market/C3_object_detail_macro.png", alt: "Macro detail of handmade ceramic cup rim and glaze texture", aspect: "square", platform: "Material detail" },
+      ],
+    },
+    {
+      category: "Brand Identity Documentation",
+      description: "Guideline-style images documenting the Arch Mark, colour palette, type behaviour, and material applications.",
+      count: 3,
+      images: [
+        { src: "/images/foundry-market/D1_arch_mark_three_grounds.png", alt: "Foundry Market Arch Mark on Iron, Cream, and Brass grounds", aspect: "square", platform: "Brand guidelines" },
+        { src: "/images/foundry-market/D2_mark_on_materials.png", alt: "Foundry Market Arch Mark stamped, woven, and debossed on material surfaces", aspect: "portrait", platform: "Material applications" },
+        { src: "/images/foundry-market/D3_colour_type_specimen.png", alt: "Foundry Market colour and type specimen sheet", aspect: "wide", platform: "Case study documentation" },
+      ],
+    },
+    {
+      category: "Positioning Visuals",
+      description: "Images translating the brand's market position into everyday elevation, retail environment, and printed narrative.",
+      count: 3,
+      images: [
+        { src: "/images/foundry-market/E1_positioning_manifesto.png", alt: "Foundry Market positioning image with five everyday object categories", aspect: "wide", platform: "Press kit / Trade" },
+        { src: "/images/foundry-market/E2_retail_concept_space.png", alt: "Foundry Market retail concept space with sparse shelving and brand sign", aspect: "portrait", platform: "Retail pitching / Press" },
+        { src: "/images/foundry-market/E3_brand_document_spread.png", alt: "Foundry Market brand document open spread on dark iron surface", aspect: "wide", platform: "Brand document" },
+      ],
+    },
+    {
+      category: "Content Direction",
+      description: "Ongoing social and content references for founder-led moments, brand-led object posts, and story-format voice.",
+      count: 3,
+      images: [
+        { src: "/images/foundry-market/F1_founder_content.png", alt: "Founder-led morning table content with cup, bag, and hand", aspect: "portrait", platform: "Instagram founder content" },
+        { src: "/images/foundry-market/F2_brand_social_content.png", alt: "Cast-iron mortar and pestle on dark concrete with small Arch Mark", aspect: "square", platform: "Instagram Feed" },
+        { src: "/images/foundry-market/F3_story_brand_voice.png", alt: "Foundry Market Instagram Story brand voice on phone screen", aspect: "portrait", platform: "Instagram Story" },
+      ],
+    },
+  ],
+  stats: {
+    totalAssets: 18,
+    categories: 6,
+    formats: ["1:1", "2:3", "3:2"],
+    platforms: ["Editorial", "Retail environment", "Instagram", "Press kit", "Brand document"],
+  },
+  pullQuotes: [
+    "The visual direction was built around the act of selection itself: the belief that the right everyday object, treated with the right amount of attention, becomes something more than it was.",
+    "The brand voice is in the images, not just in the guidelines.",
+  ],
+  bodyText: [
+    "Foundry Market is an independent retail concept built around curated everyday objects. It is not a department store. It is not a concept store. It is a place where ordinary things — a cup, a bag, a brush, a knife — are chosen with genuine care and placed into a context that makes their quality visible.",
+    "Brand story work at Foundry Market began with the act of looking. Before designing a mark or choosing a typeface, we asked: what does this brand see? What does it choose, and why? The photography direction came first — not because images come before systems, but because in this case the visual world was the positioning.",
+    "The Arch Mark is a solid filled semicircle. It references a market archway, a kiln mouth, a sun at the horizon, and a stamp of approval. It says almost nothing directly, which is exactly what a mark that stands for curation should do. The work is done by what surrounds it.",
+    "For rollout, the deliverable is not a static presentation but a working art direction document — a set of images that a photographer, a social media manager, or a store designer can use to make new work in the brand's register without needing a full brief. The brand voice is in the images, not just in the guidelines.",
+  ],
+  nextProject: {
+    title: "Luna Bakehouse",
+    slug: "luna-bakehouse",
+    thumbnail: "",
+    visual: "art-luna",
+    tagline: "Monthly visual support for social drops, seasonal menus, packaging extensions and e-commerce refreshes.",
+  },
+};
+
 const sectorLabels = {
   Beauty: ["Consumer Brands", "Fashion & Beauty"],
   "Food & Drink": ["Hospitality", "Food & Drink"],
@@ -1116,6 +1230,7 @@ const caseStudies = projects.map((project, index) => {
   if (project.slug === "muru") return muruCase;
   if (project.slug === "brume") return brumeCase;
   if (project.slug === "kiko-home") return kikoHomeCase;
+  if (project.slug === "foundry-market") return foundryMarketCase;
   return createCaseStudy(project, index);
 });
 
@@ -1540,7 +1655,7 @@ function CaseStudyPage({ slug, onNavigate }) {
     return <PackagingSuitePage caseStudy={caseStudy} onNavigate={onNavigate} />;
   }
 
-  if (caseStudy.serviceType === "campaign") {
+  if (caseStudy.serviceType === "campaign" || caseStudy.serviceType === "brand-story") {
     return <CampaignSuitePage caseStudy={caseStudy} onNavigate={onNavigate} />;
   }
 
