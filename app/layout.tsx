@@ -36,10 +36,27 @@ try {
 } catch {}
 `;
 
+const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
+        {gaMeasurementId?.startsWith("G-") ? (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`} />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());
+gtag("config", "${gaMeasurementId}");
+`,
+              }}
+            />
+          </>
+        ) : null}
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <PageShell>{children}</PageShell>
       </body>
