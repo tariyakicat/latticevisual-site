@@ -3,12 +3,27 @@ import "./globals.css";
 import { PageShell } from "@/components/page-shell";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://latticevisual.com"),
   title: {
     default: "Lattice Visual | Scientific Illustration Studio",
     template: "%s | Lattice Visual",
   },
   description:
     "Scientific illustration studio creating journal covers, paper figures, graphical abstracts, scientific animation and 3D research visuals.",
+  openGraph: {
+    type: "website",
+    url: "https://latticevisual.com/",
+    siteName: "Lattice Visual",
+    title: "Lattice Visual | Scientific Illustration Studio",
+    description:
+      "Scientific illustration studio creating journal covers, paper figures, graphical abstracts, scientific animation and 3D research visuals.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lattice Visual | Scientific Illustration Studio",
+    description:
+      "Scientific illustration studio creating journal covers, paper figures, graphical abstracts, scientific animation and 3D research visuals.",
+  },
 };
 
 const themeScript = `

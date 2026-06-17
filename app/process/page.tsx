@@ -6,6 +6,9 @@ import { processSteps } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Process",
   description: "The Lattice Visual workflow from scientific brief to final publication-ready files.",
+  alternates: {
+    canonical: "/process",
+  },
 };
 
 export default function ProcessPage() {

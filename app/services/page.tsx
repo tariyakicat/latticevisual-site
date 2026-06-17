@@ -8,6 +8,9 @@ import { services } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Services",
   description: "Scientific illustration services for covers, figures, graphical abstracts, animation, posters and 3D visualization.",
+  alternates: {
+    canonical: "/services",
+  },
 };
 
 export default function ServicesPage() {

@@ -5,6 +5,9 @@ import { SectionHeading } from "@/components/section-heading";
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "High-resolution scientific illustration portfolio organized by discipline and use.",
+  alternates: {
+    canonical: "/work",
+  },
 };
 
 export default function WorkPage() {

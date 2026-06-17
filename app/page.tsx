@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, BadgeCheck, Download, FileCheck2, LockKeyhole, ShieldCheck } from "lucide-react";
 import { StaticPlate } from "@/components/artwork-plate";
@@ -7,6 +8,12 @@ import { PortfolioGrid } from "@/components/portfolio-grid";
 import { SectionHeading } from "@/components/section-heading";
 import { TemplateCard } from "@/components/template-card";
 import { processSteps, projects, services, templates } from "@/lib/data";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 const trustItems = [
   {

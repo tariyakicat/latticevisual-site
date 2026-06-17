@@ -21,6 +21,22 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   return {
     title: project.title,
     description: project.brief,
+    alternates: {
+      canonical: `/work/${project.slug}`,
+    },
+    openGraph: {
+      title: `${project.title} | Lattice Visual`,
+      description: project.brief,
+      url: `/work/${project.slug}`,
+      images: [
+        {
+          url: project.cover,
+          width: project.width,
+          height: project.height,
+          alt: project.title,
+        },
+      ],
+    },
   };
 }
 

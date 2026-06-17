@@ -7,6 +7,9 @@ import { aboutStats } from "@/lib/data";
 export const metadata: Metadata = {
   title: "About",
   description: "About Lattice Visual, a scientific illustration studio combining academic literacy and editorial design.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 const principles = [

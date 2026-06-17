@@ -8,6 +8,9 @@ import { templates, templateCategories } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Templates",
   description: "Free and paid scientific illustration templates for graphical abstracts, figures, journal covers, posters and animation planning.",
+  alternates: {
+    canonical: "/templates",
+  },
 };
 
 export default function TemplatesPage() {

@@ -5,6 +5,9 @@ import { SectionHeading } from "@/components/section-heading";
 export const metadata: Metadata = {
   title: "Contact",
   description: "Request a quote for scientific illustration, journal cover art, manuscript figures or scientific animation.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {
