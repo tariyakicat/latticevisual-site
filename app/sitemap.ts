@@ -3,6 +3,8 @@ import { projects } from "@/lib/data";
 
 const baseUrl = "https://latticevisual.com";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = ["/", "/work", "/services", "/templates", "/process", "/about", "/contact"];
   const projectRoutes = projects.map((project) => `/work/${project.slug}`);
