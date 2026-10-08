@@ -1838,7 +1838,6 @@ function ContactPage() {
           <p>Tell us about your project and we will get back within 24 hours.</p>
           <a href="mailto:contact@latticevisual.com">contact@latticevisual.com</a>
           <span>Instagram: @latticevisual</span>
-          <span>WeChat: latticevisual</span>
         </div>
         <form
           onSubmit={(event) => {
