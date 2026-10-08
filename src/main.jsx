@@ -1836,7 +1836,7 @@ function ContactPage() {
             unforgettable.
           </h1>
           <p>Tell us about your project and we will get back within 24 hours.</p>
-          <a href="mailto:latticevisualltd@gmail.com">latticevisualltd@gmail.com</a>
+          <a href="mailto:contact@latticevisual.com">contact@latticevisual.com</a>
           <span>Instagram: @latticevisual</span>
           <span>WeChat: latticevisual</span>
         </div>
@@ -2361,7 +2361,7 @@ function Footer({ onNavigate }) {
         </div>
       </div>
       <div className="footer-contact">
-        <a href="mailto:latticevisualltd@gmail.com">latticevisualltd@gmail.com</a>
+        <a href="mailto:contact@latticevisual.com">contact@latticevisual.com</a>
         <button type="button" onClick={() => onNavigate("/contact")}>
           Start a project →
         </button>
